@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML>
+<html manifest="OfflineApp.appcache">
+<head>
+<meta charset="utf-8">
+<title>Project1</title>
+<meta name="generator" content="NSB/AppStudio 6.0.1.0$pxjy" />
+<meta name='date' content='2016-11-15 10:38:41.825660' />
+<meta name='version' content='1.0.0' />
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
+<meta name='apple-mobile-web-app-capable' content='YES' />
+<meta name='mobile-web-app-capable' content='yes' />
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+<meta name='apple-mobile-web-app-title' content='' />
+<meta name='copyright' content='Copyright 2016 ABC Company' />
+<meta http-equiv='Content-Security-Policy' content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src * blob:; img-src * data:; connect-src *;" />
+<noscript><h1>JavaScript must be enabled!</h1></noscript>
+<link rel='apple-touch-icon' href='nsb/images/LauncherIcon57.png' />
+<link rel='shortcut icon' sizes='192x192' href='nsb/images/192.png' />
+<link href="nsb/nsbstyle.css" rel="stylesheet">
+<script src="nsb/jquery.js"></script>
+<link href="nsb/jquery.modal.css" rel="stylesheet">
+<script src="nsb/hfunc.js"></script>
+<script src="nsb/jquery.modal.min.js"></script>
+<link href="nsb/bs/css/bootstrap.min.css" rel="stylesheet">
+<script src="nsb/bs/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/530b34dcfd.js"></script>
+<script src="nsb/bs/bsFunctions.js"></script>
+
+<style type="text/css">
+#Form1 {background:inherit;}
+#Button1 {position:relative; left:112px; right:auto; top:374px; bottom:auto; height:auto; width:auto;}
+#Image1 {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:328px; width:248px;}
+</style>
+
+</head>
+<body style="margin:0px;-ms-touch-action:none;font-family:-apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue';">
+<div data-role="page" id="NSBPage" data-theme="a" style="position:absolute; width:100%; background-color:inherit; ">
+<a name='/Form1' data-role=none></a>
+<div id="Form1" class="nsb-form" style="position:relative; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+Form1.innerHTML=[
+
+    "<button id='Button1' data-role='none' class='btn btn-default btn-md ' style='  float:left;'><span id='Button1_icon' class=''></span>Button<span id=Button1_badge class=badge style=margin-left:1ch;></span></button>",
+  "<div id='Image1' data-nsb-type=image style='float:left;' class=''><img src='/Users/brishahowe/School/Creighton/Senior/Capstone/BrownBabe/Bouquet copy.jpg'  height=100% width=100% id='Image1_img' usemap='Image1_map'></div>",
+  ].join('');
+</script>
+</div>
+</div>
+<script>
+if(!navigator.cookieEnabled) NSB.MsgBox('Please turn cookies on.');
+(function(){var all=document.getElementsByTagName('*');for(var i=0;i<all.length;i++)if(all[i].id!=''&&typeof all[i].id!='undefined'&&typeof window[all[i].id]=='undefined')window[all[i].id]=all[i];})()
+var NSB = NSB || {};
+NSB.currentForm = Form1;
+NSB.stopOnError = true;
+NSB.enableBrowserArrows = false;
+NSB.enableAppScroll = false;
+NSB.newVersionWarning = false;
+NSB.id = 'Project1';
+NSB.voltAppId = '';
+if ($.mobile != undefined) $.mobile.hashListeningEnabled = false;
+
+// ***** Code for form: Form1 *****
+window.addEventListener('load', function() {
+  Form1.style.display = 'block';
+  NSB.addProperties(Form1);
+  NSB.bs.addProperties(Button1, 'Button_bs');
+  NSB.addProperties(Image1);
+  Form1.style.display = 'none';
+}, false);
+
+
+window.addEventListener('orientationchange', function(){window.scrollTo(0,0)});
+window.addEventListener('load', function() {
+  browserWarningMessage('Please use Google Chrome, Apple Safari or another supported browser.');
+  Form1.style.display = 'block';
+  if (NSB.enableBrowserArrows) location.hash = '#/Form1';
+  Main();
+  if (typeof(Form1.onshow)=='function') Form1.onshow();
+}, false);
+</script>
+<script src='code.js'></script>
+
+</body>
+</html>
