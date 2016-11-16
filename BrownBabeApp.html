@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>HelloWorld</title>
 <meta name="generator" content="NSB/AppStudio 6.0.1.0$pxjy" />
-<meta name='date' content='2016-11-15 10:18:33.560240' />
+<meta name='date' content='2016-11-16 11:55:54.886174' />
 <meta name='version' content='1.0.0' />
 <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
 <meta name='apple-mobile-web-app-capable' content='YES' />
@@ -23,26 +23,22 @@
 <script src="nsb/jquery.modal.min.js"></script>
 <script src="nsb/fastclick.js"></script>
 <script src="nsb/iscroll.js"></script>
+<link href="nsb/bs/css/bootstrap.min.css" rel="stylesheet">
+<script src="nsb/bs/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/530b34dcfd.js"></script>
+<script src="nsb/bs/bsFunctions.js"></script>
 
 <link href="chromeManifest.json" rel="manifest">
 
 <style type="text/css">
 #homeForm {background:inherit;}
+#Label1 {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:50px; width:324px;}
+#Lips {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
 #Skin {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
 #Eyes {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
-#Lips {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
 #Cheeks {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
 #Environmental {position:relative; left:initial; right:auto; top:auto; bottom:auto; height:90px; width:324px;}
 </style>
-<script src="UnsplashLips.jpg"></script>
-
-<script src="AppEyes.bmp"></script>
-
-<script src="UnsplashSkin.jpg"></script>
-
-<script src="UnsplashEnvironmental.jpg"></script>
-
-<script src="UnsplashCheeks.jpg"></script>
 
 </head>
 <body style="margin:0px;-ms-touch-action:none;font-family:helvetica;">
@@ -53,11 +49,12 @@
 <div id="homeForm" class="nsb-form" style="position:relative; display:none; height:100vh; top:0px; left:0px; width:100%; ">
 <script>
 homeForm.innerHTML=[
-  "<div id='Skin' data-nsb-type=image style='float:left;' class=''><img src='Images/UnsplashSkin.jpg'  height=100% width=100% id='Skin_img' usemap='Skin_map'></div>",
-  "<div id='Eyes' data-nsb-type=image style='float:left;' class=''><img src='Images/AppEyes.bmp'  height=100% width=100% id='Eyes_img' usemap='Eyes_map'></div>",
-  "<div id='Lips' data-nsb-type=image style='float:left;' class=''><img src='Images/UnsplashLips.jpg'  height=100% width=100% id='Lips_img' usemap='Lips_map'></div>",
-  "<div id='Cheeks' data-nsb-type=image style='float:left;' class=''><img src='Images/UnsplashCheeks.jpg'  height=100% width=100% id='Cheeks_img' usemap='Cheeks_map'></div>",
-  "<div id='Environmental' data-nsb-type=image style='float:left;' class=''><img src='Images/UnsplashEnvironmental.jpg'  height=100% width=100% id='Environmental_img' usemap='Environmental_map'></div>",
+  "<span id='Label1' style='background-color:#6c242c; float:left;'  class='label label-default '>BrownBabe</span>",
+  "<div id='Lips' data-nsb-type=image style='border-color:#6c242c; float:left;' class=''><img src='Images/UnsplashLipsSmall.jpg'  height=100% width=100% id='Lips_img' usemap='Lips_map'></div>",
+  "<div id='Skin' data-nsb-type=image style='border-color:#6c242c; float:left;' class=''><img src='Images/UnsplashSkinSmall.jpg'  height=100% width=100% id='Skin_img' usemap='Skin_map'></div>",
+  "<div id='Eyes' data-nsb-type=image style='float:left;' class=''><img src='Images/AppEyesSmall.jpg'  height=100% width=100% id='Eyes_img' usemap='Eyes_map'></div>",
+  "<div id='Cheeks' data-nsb-type=image style='border-width:2px; border-color:#6c242c; float:left;' class=''><img src='Images/UnsplashCheeksSmall.jpg'  height=100% width=100% id='Cheeks_img' usemap='Cheeks_map'></div>",
+  "<div id='Environmental' data-nsb-type=image style='border-color:$6c242c; float:left;' class=''><img src='Images/UnsplashEnvironmentalSmall.jpg'  height=100% width=100% id='Environmental_img' usemap='Environmental_map'></div>",
   ].join('');
 </script>
 </div>
@@ -67,7 +64,7 @@ homeForm.innerHTML=[
 if(!navigator.cookieEnabled) NSB.MsgBox('Please turn cookies on.');
 (function(){var all=document.getElementsByTagName('*');for(var i=0;i<all.length;i++)if(all[i].id!=''&&typeof all[i].id!='undefined'&&typeof window[all[i].id]=='undefined')window[all[i].id]=all[i];})()
 var NSB = NSB || {};
-NSB.currentForm = UnsplashLips_jpg;
+NSB.currentForm = homeForm;
 NSB.stopOnError = True;
 NSB.enableBrowserArrows = true;
 NSB.enableAppScroll = false;
@@ -83,9 +80,10 @@ window.addEventListener('load', function() {
   homeForm.ref = homeForm_ref;
   homeForm.scroller = homeForm_scroller;
   NSB.addProperties(homeForm);
+  NSB.bs.addProperties(Label1, 'Label_bs');
+  NSB.addProperties(Lips);
   NSB.addProperties(Skin);
   NSB.addProperties(Eyes);
-  NSB.addProperties(Lips);
   NSB.addProperties(Cheeks);
   NSB.addProperties(Environmental);
   homeForm.style.display = 'none';
@@ -95,10 +93,10 @@ window.addEventListener('load', function() {
 window.addEventListener('orientationchange', function(){window.scrollTo(0,0)});
 window.addEventListener('load', function() {
   browserWarningMessage('Please use Google Chrome, Apple Safari or another supported browser.');
-  UnsplashLips_jpg.style.display = 'block';
-  if (NSB.enableBrowserArrows) location.hash = '#/UnsplashLips_jpg';
+  homeForm.style.display = 'block';
+  if (NSB.enableBrowserArrows) location.hash = '#/homeForm';
   Main();
-  if (typeof(UnsplashLips_jpg.onshow)=='function') UnsplashLips_jpg.onshow();
+  if (typeof(homeForm.onshow)=='function') homeForm.onshow();
 }, false);
 </script>
 <script src='code.js'></script>

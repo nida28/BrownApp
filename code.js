@@ -1,4 +1,17 @@
-Sub Main()
-window.applicationCache.removeEventListener("error", NSB.oncache, False)
+//Form2 Code
+Function Select1_onchange()
+ 
+ UnsplashSkin_jpg= new Image(324,90);
+ pb.addImage(UnsplashSkin_jpg);
+ 
+End Function
 
-End Sub
+
+
+
+ 
+}
+
+Skin.onclick=function(){
+   ChangeForm(skinForm);
+}
