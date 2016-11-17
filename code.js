@@ -1,4 +1,3 @@
-//Form2 Code
 Function Select1_onchange()
  
  UnsplashSkin_jpg= new Image(324,90);

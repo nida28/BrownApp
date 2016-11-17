@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>HelloWorld</title>
 <meta name="generator" content="NSB/AppStudio 6.0.1.0$pxjy" />
-<meta name='date' content='2016-11-16 12:01:48.605000' />
+<meta name='date' content='2016-11-17 15:44:14.382431' />
 <meta name='version' content='1.0.0' />
 <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
 <meta name='apple-mobile-web-app-capable' content='YES' />
@@ -38,6 +38,16 @@
 #Eyes {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
 #Cheeks {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
 #Environmental {position:relative; left:initial; right:auto; top:auto; bottom:auto; height:90px; width:324px;}
+#lipsForm {background:inherit;}
+
+#skinForm {background:inherit;}
+
+#eyesForm {background:inherit;}
+
+#cheeksForm {background:inherit;}
+
+#environmentForm {background:inherit;}
+
 </style>
 
 </head>
@@ -58,6 +68,46 @@ homeForm.innerHTML=[
   ].join('');
 </script>
 </div>
+</div>
+<a name='/lipsForm' data-role=none></a>
+<div id="lipsForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+lipsForm.innerHTML=[
+
+  ].join('');
+</script>
+</div>
+<a name='/skinForm' data-role=none></a>
+<div id="skinForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+skinForm.innerHTML=[
+
+  ].join('');
+</script>
+</div>
+<a name='/eyesForm' data-role=none></a>
+<div id="eyesForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+eyesForm.innerHTML=[
+
+  ].join('');
+</script>
+</div>
+<a name='/cheeksForm' data-role=none></a>
+<div id="cheeksForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+cheeksForm.innerHTML=[
+
+  ].join('');
+</script>
+</div>
+<a name='/environmentForm' data-role=none></a>
+<div id="environmentForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+environmentForm.innerHTML=[
+
+  ].join('');
+</script>
 </div>
 </div>
 <script>
@@ -87,6 +137,46 @@ window.addEventListener('load', function() {
   NSB.addProperties(Cheeks);
   NSB.addProperties(Environmental);
   homeForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: lipsForm *****
+window.addEventListener('load', function() {
+  lipsForm.style.display = 'block';
+  NSB.addProperties(lipsForm);
+
+  lipsForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: skinForm *****
+window.addEventListener('load', function() {
+  skinForm.style.display = 'block';
+  NSB.addProperties(skinForm);
+
+  skinForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: eyesForm *****
+window.addEventListener('load', function() {
+  eyesForm.style.display = 'block';
+  NSB.addProperties(eyesForm);
+
+  eyesForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: cheeksForm *****
+window.addEventListener('load', function() {
+  cheeksForm.style.display = 'block';
+  NSB.addProperties(cheeksForm);
+
+  cheeksForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: environmentForm *****
+window.addEventListener('load', function() {
+  environmentForm.style.display = 'block';
+  NSB.addProperties(environmentForm);
+
+  environmentForm.style.display = 'none';
 }, false);
 
 
