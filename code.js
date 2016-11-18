@@ -1,16 +1,19 @@
-Function Select1_onchange()
- 
- UnsplashSkin_jpg= new Image(324,90);
- pb.addImage(UnsplashSkin_jpg);
- 
-End Function
-
-
-
-
- 
+Lips.onclick=function(){
+  ChangeForm(lipsForm);
 }
 
 Skin.onclick=function(){
-   ChangeForm(skinForm);
+  ChangeForm(skinForm);
+}
+
+Eyes.onclick=function(){
+  ChangeForm(eyesForm);
+}
+
+Cheeks.onclick=function(){
+  ChangeForm(cheeksForm);
+}
+
+Environmental.onclick=function(){
+  ChangeForm(environmentForm);
 }
