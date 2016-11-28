@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>HelloWorld</title>
 <meta name="generator" content="NSB/AppStudio 6.0.1.0$pxjy" />
-<meta name='date' content='2016-11-18 11:22:16.637731' />
+<meta name='date' content='2016-11-25 17:53:56.436164' />
 <meta name='version' content='1.0.0' />
 <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
 <meta name='apple-mobile-web-app-capable' content='YES' />
@@ -39,15 +39,25 @@
 #Cheeks {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
 #Environmental {position:relative; left:initial; right:auto; top:auto; bottom:auto; height:90px; width:324px;}
 #lipsForm {background:inherit;}
-#Button1 {position:absolute; left:81px; right:auto; top:157px; bottom:auto; height:74px; width:156px;}
+#matteLabel {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:203px; width:324px;}
+#glossyLabel {position:absolute; left:0px; right:auto; top:201px; bottom:auto; height:263px; width:165px;}
+#creamLips {position:absolute; left:162px; right:auto; top:202px; bottom:auto; height:262px; width:162px;}
 #skinForm {background:inherit;}
-
+#moisturizerLabel {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:174px; width:177px;}
+#foundationLabel {position:absolute; left:173px; right:auto; top:0px; bottom:auto; height:313px; width:151px;}
+#primerLabel {position:absolute; left:0px; right:auto; top:173px; bottom:auto; height:142px; width:176px;}
+#bbLabel {position:absolute; left:0px; right:auto; top:313px; bottom:auto; height:151px; width:324px;}
 #eyesForm {background:inherit;}
-
+#eyelinerLabel {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:219px; width:167px;}
+#mascaraLabel {position:absolute; left:0px; right:auto; top:218px; bottom:auto; height:246px; width:324px;}
+#shadowLabel {position:absolute; left:165px; right:auto; top:0px; bottom:auto; height:218px; width:159px;}
 #cheeksForm {background:inherit;}
-
+#blushLabel {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:219px; width:324px;}
+#highlighterLabel {position:absolute; left:0px; right:auto; top:216px; bottom:auto; height:248px; width:166px;}
+#bronzeLabel {position:absolute; left:165px; right:auto; top:218px; bottom:auto; height:246px; width:159px;}
 #environmentForm {background:inherit;}
-
+#bodyShopLabel {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:232px; width:324px;}
+#burtsLabel {position:absolute; left:0px; right:auto; top:228px; bottom:auto; height:236px; width:324px;}
 </style>
 
 </head>
@@ -73,16 +83,20 @@ homeForm.innerHTML=[
 <div id="lipsForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
 <script>
 lipsForm.innerHTML=[
-
-    "<button id='Button1' data-role='none' class='btn btn-default btn-md ' style='  '><span id='Button1_icon' class=''></span>Button<span id=Button1_badge class=badge style=margin-left:1ch;></span></button>",
+  "<div id='matteLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Matte Lips</div>",
+  "<div id='glossyLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Glossy Lips</div>",
+  "<div id='creamLips' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Cream Lips</div>",
   ].join('');
 </script>
 </div>
 <a name='/skinForm' data-role=none></a>
-<div id="skinForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<div id="skinForm" class="nsb-form jqmodal" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
 <script>
 skinForm.innerHTML=[
-
+  "<div id='moisturizerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Moisturizer</div>",
+  "<div id='foundationLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Foundation</div>",
+  "<div id='primerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Primer</div>",
+  "<div id='bbLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >BB and CC Cream</div>",
   ].join('');
 </script>
 </div>
@@ -90,7 +104,9 @@ skinForm.innerHTML=[
 <div id="eyesForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
 <script>
 eyesForm.innerHTML=[
-
+  "<div id='eyelinerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Eyeliner</div>",
+  "<div id='mascaraLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Mascara</div>",
+  "<div id='shadowLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Eye Shadow</div>",
   ].join('');
 </script>
 </div>
@@ -98,7 +114,9 @@ eyesForm.innerHTML=[
 <div id="cheeksForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
 <script>
 cheeksForm.innerHTML=[
-
+  "<div id='blushLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Blush</div>",
+  "<div id='highlighterLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Highlighter</div>",
+  "<div id='bronzeLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Bronzer</div>",
   ].join('');
 </script>
 </div>
@@ -106,7 +124,8 @@ cheeksForm.innerHTML=[
 <div id="environmentForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
 <script>
 environmentForm.innerHTML=[
-
+  "<div id='bodyShopLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >The Body Shop</div>",
+  "<div id='burtsLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Burt\'s Bees</div>",
   ].join('');
 </script>
 </div>
@@ -144,7 +163,12 @@ window.addEventListener('load', function() {
 window.addEventListener('load', function() {
   lipsForm.style.display = 'block';
   NSB.addProperties(lipsForm);
-  NSB.bs.addProperties(Button1, 'Button_bs');
+  matteLabel.style.lineHeight='203px';
+  NSB.addProperties(matteLabel);
+  glossyLabel.style.lineHeight='263px';
+  NSB.addProperties(glossyLabel);
+  creamLips.style.lineHeight='262px';
+  NSB.addProperties(creamLips);
   lipsForm.style.display = 'none';
 }, false);
 
@@ -152,15 +176,28 @@ window.addEventListener('load', function() {
 window.addEventListener('load', function() {
   skinForm.style.display = 'block';
   NSB.addProperties(skinForm);
-
+  moisturizerLabel.style.lineHeight='174px';
+  NSB.addProperties(moisturizerLabel);
+  foundationLabel.style.lineHeight='313px';
+  NSB.addProperties(foundationLabel);
+  primerLabel.style.lineHeight='142px';
+  NSB.addProperties(primerLabel);
+  bbLabel.style.lineHeight='151px';
+  NSB.addProperties(bbLabel);
   skinForm.style.display = 'none';
+  $('#skinForm').on($.jqmodal.CLOSE, skinForm.onhide);
 }, false);
 
 // ***** Code for form: eyesForm *****
 window.addEventListener('load', function() {
   eyesForm.style.display = 'block';
   NSB.addProperties(eyesForm);
-
+  eyelinerLabel.style.lineHeight='219px';
+  NSB.addProperties(eyelinerLabel);
+  mascaraLabel.style.lineHeight='246px';
+  NSB.addProperties(mascaraLabel);
+  shadowLabel.style.lineHeight='218px';
+  NSB.addProperties(shadowLabel);
   eyesForm.style.display = 'none';
 }, false);
 
@@ -168,7 +205,12 @@ window.addEventListener('load', function() {
 window.addEventListener('load', function() {
   cheeksForm.style.display = 'block';
   NSB.addProperties(cheeksForm);
-
+  blushLabel.style.lineHeight='219px';
+  NSB.addProperties(blushLabel);
+  highlighterLabel.style.lineHeight='248px';
+  NSB.addProperties(highlighterLabel);
+  bronzeLabel.style.lineHeight='246px';
+  NSB.addProperties(bronzeLabel);
   cheeksForm.style.display = 'none';
 }, false);
 
@@ -176,7 +218,10 @@ window.addEventListener('load', function() {
 window.addEventListener('load', function() {
   environmentForm.style.display = 'block';
   NSB.addProperties(environmentForm);
-
+  bodyShopLabel.style.lineHeight='232px';
+  NSB.addProperties(bodyShopLabel);
+  burtsLabel.style.lineHeight='236px';
+  NSB.addProperties(burtsLabel);
   environmentForm.style.display = 'none';
 }, false);
 
