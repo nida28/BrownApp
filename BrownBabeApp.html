@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>HelloWorld</title>
 <meta name="generator" content="NSB/AppStudio 6.0.1.0$pxjy" />
-<meta name='date' content='2016-11-25 17:53:56.436164' />
+<meta name='date' content='2016-11-27 20:44:32.337828' />
 <meta name='version' content='1.0.0' />
 <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
 <meta name='apple-mobile-web-app-capable' content='YES' />
@@ -39,9 +39,11 @@
 #Cheeks {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
 #Environmental {position:relative; left:initial; right:auto; top:auto; bottom:auto; height:90px; width:324px;}
 #lipsForm {background:inherit;}
-#matteLabel {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:203px; width:324px;}
-#glossyLabel {position:absolute; left:0px; right:auto; top:201px; bottom:auto; height:263px; width:165px;}
-#creamLips {position:absolute; left:162px; right:auto; top:202px; bottom:auto; height:262px; width:162px;}
+#lipsBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:324px;}
+#lipsBack {position:absolute; left:0px; right:auto; top:8px; bottom:auto; height:auto; width:auto;}
+#matteLabel {position:absolute; left:0px; right:auto; top:49px; bottom:auto; height:193px; width:324px;}
+#glossyLabel {position:absolute; left:0px; right:auto; top:237px; bottom:auto; height:227px; width:165px;}
+#creamLips {position:absolute; left:162px; right:auto; top:239px; bottom:auto; height:225px; width:162px;}
 #skinForm {background:inherit;}
 #moisturizerLabel {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:174px; width:177px;}
 #foundationLabel {position:absolute; left:173px; right:auto; top:0px; bottom:auto; height:313px; width:151px;}
@@ -58,6 +60,29 @@
 #environmentForm {background:inherit;}
 #bodyShopLabel {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:232px; width:324px;}
 #burtsLabel {position:absolute; left:0px; right:auto; top:228px; bottom:auto; height:236px; width:324px;}
+#matteForm {background:inherit;}
+#MatteLipsBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:324px;}
+#matteBack {position:absolute; left:0px; right:auto; top:7px; bottom:auto; height:auto; width:auto;}
+#matteTextBox {position:absolute; left:0px; right:auto; top:57px; bottom:auto; height:83px; width:324px;}
+#matteProTipBox {position:absolute; left:0px; right:auto; top:150px; bottom:auto; height:45px; width:324px;}
+#matteLipsVid {position:absolute; left:0px; right:auto; top:201px; bottom:auto; height:144px; width:350px;}
+
+#matteHeader {position:absolute; left:0px; right:auto; top:353px; bottom:auto; height:40px; width:100%;}
+
+#colourPop {position:absolute; left:46px; right:auto; top:393px; bottom:auto; height:71px; width:83px;}
+#stila {position:absolute; left:183px; right:auto; top:393px; bottom:auto; height:71px; width:91px;}
+#colourPopForm {background:inherit;}
+#colourPopBar {position:absolute; left:-4px; right:auto; top:0px; bottom:auto; height:56px; width:101.25%;}
+#colourPopBack {position:static; left:initial; right:auto; top:initial; bottom:auto; height:auto; width:auto;}
+#laxCP {position:absolute; left:73px; right:auto; top:75px; bottom:auto; height:133px; width:180px;}
+#colourPopText {position:absolute; left:1px; right:auto; top:224px; bottom:auto; height:131px; width:323px;}
+#colourPopText2 {position:absolute; left:0px; right:auto; top:361px; bottom:auto; height:30px; width:324px;}
+#stilaForm {background:inherit;}
+#stilaBar {position:absolute; left:-4px; right:auto; top:0px; bottom:auto; height:56px; width:101.25%;}
+#stilaBack {position:static; left:initial; right:auto; top:initial; bottom:auto; height:auto; width:auto;}
+#stilaText2 {position:absolute; left:0px; right:auto; top:420px; bottom:auto; height:32px; width:324px;}
+#Image1Copy {position:absolute; left:99px; right:auto; top:71px; bottom:auto; height:140px; width:121px;}
+#stilaText {position:absolute; left:1px; right:auto; top:224px; bottom:auto; height:188px; width:323px;}
 </style>
 
 </head>
@@ -80,52 +105,97 @@ homeForm.innerHTML=[
 </div>
 </div>
 <a name='/lipsForm' data-role=none></a>
-<div id="lipsForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<div id="lipsForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
 <script>
 lipsForm.innerHTML=[
-  "<div id='matteLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Matte Lips</div>",
-  "<div id='glossyLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Glossy Lips</div>",
-  "<div id='creamLips' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Cream Lips</div>",
+  "<span id='lipsBar' style='font-size:25px; font-family:Californian FB; padding-top:12px; background-color:#6c242c; float:left;'  class='label label-default '>Lips</span>",
+
+    "<button id='lipsBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Californian FB; font-style:italic;   '><span id='lipsBack_icon' class=''></span>Back<span id=lipsBack_badge class=badge style=margin-left:1ch;></span></button>",
+  "<div id='matteLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Matte Lips</div>",
+  "<div id='glossyLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Glossy Lips</div>",
+  "<div id='creamLips' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Cream Lips</div>",
   ].join('');
 </script>
 </div>
 <a name='/skinForm' data-role=none></a>
-<div id="skinForm" class="nsb-form jqmodal" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<div id="skinForm" class="nsb-form jqmodal" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
 <script>
 skinForm.innerHTML=[
-  "<div id='moisturizerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Moisturizer</div>",
-  "<div id='foundationLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Foundation</div>",
-  "<div id='primerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Primer</div>",
-  "<div id='bbLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >BB and CC Cream</div>",
+  "<div id='moisturizerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Moisturizer</div>",
+  "<div id='foundationLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Foundation</div>",
+  "<div id='primerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Primer</div>",
+  "<div id='bbLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >BB and CC Cream</div>",
   ].join('');
 </script>
 </div>
 <a name='/eyesForm' data-role=none></a>
-<div id="eyesForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<div id="eyesForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
 <script>
 eyesForm.innerHTML=[
-  "<div id='eyelinerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Eyeliner</div>",
-  "<div id='mascaraLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Mascara</div>",
-  "<div id='shadowLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Eye Shadow</div>",
+  "<div id='eyelinerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Eyeliner</div>",
+  "<div id='mascaraLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Mascara</div>",
+  "<div id='shadowLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Eye Shadow</div>",
   ].join('');
 </script>
 </div>
 <a name='/cheeksForm' data-role=none></a>
-<div id="cheeksForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<div id="cheeksForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
 <script>
 cheeksForm.innerHTML=[
-  "<div id='blushLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Blush</div>",
-  "<div id='highlighterLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Highlighter</div>",
-  "<div id='bronzeLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Bronzer</div>",
+  "<div id='blushLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Blush</div>",
+  "<div id='highlighterLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Highlighter</div>",
+  "<div id='bronzeLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Bronzer</div>",
   ].join('');
 </script>
 </div>
 <a name='/environmentForm' data-role=none></a>
-<div id="environmentForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<div id="environmentForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
 <script>
 environmentForm.innerHTML=[
-  "<div id='bodyShopLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >The Body Shop</div>",
-  "<div id='burtsLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:ridge; border-color:#6c242c; ' >Burt\'s Bees</div>",
+  "<div id='bodyShopLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >The Body Shop</div>",
+  "<div id='burtsLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Californian FB; font-style:italic; font-weight:bold; border-width:3px; border-style:solid; border-color:#6c242c; ' >Burt\'s Bees</div>",
+  ].join('');
+</script>
+</div>
+<a name='/matteForm' data-role=none></a>
+<div id=matteForm_scroller>
+<div id="matteForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+matteForm.innerHTML=[
+  "<span id='MatteLipsBar' style='font-size:25px; font-family:Californian FB; font-style:italic; padding-top:12px; background-color:#6c242c; float:left;'  class='label label-default '>Matte Lips</span>",
+
+    "<button id='matteBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Californian FB; font-style:italic;   '><span id='matteBack_icon' class=''></span>Back<span id=matteBack_badge class=badge style=margin-left:1ch;></span></button>",
+  "<div id='matteTextBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-weight:500; ' >Matte lipsticks are a gorgeous, simple way to take your makeup game to a whole new level.  For the best application, your lips should be dry and exfoliated.</div>",
+  "<div id='matteProTipBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-style:italic; font-weight:500; ' >Pro Tip: Matte Lipsticks can be kind of drying. Stay hydrated to keep this look flawless!</div>",
+  "<div id='matteLipsVid' class=''  style='border-width:1px; border-color:#E0E0E0; ' >","<div id=matteLipsVid_addChild>",,"</div>","Matte Lips Video","</div>",
+  "<div id='matteHeader' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Californian FB; font-style:italic; font-weight:500; background-color:lightgray;  ' >","<div id=matteHeader_addChild>",,"</div>","Brands to Try</div>",
+  "<div id='colourPop' data-nsb-type=image style='' class=''><img src='Images/colourpop-logo.png'  height=100% width=100% id='colourPop_img' usemap='colourPop_map'></div>",
+  "<div id='stila' data-nsb-type=image style='' class=''><img src='Images/StilaLogo.png'  height=100% width=100% id='stila_img' usemap='stila_map'></div>",
+  ].join('');
+</script>
+</div>
+</div>
+<a name='/colourPopForm' data-role=none></a>
+<div id="colourPopForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
+<script>
+colourPopForm.innerHTML=[
+  "<div id='colourPopBar' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Californian FB; font-style:italic; font-weight:bold; color:#f2f2f2; background-color:#6c242c;  ' >","<div id=colourPopBar_addChild>",
+    "<button id='colourPopBack' data-role='none' class='btn btn-default btn-md ' style='margin-top:3%; font-family:Californian FB;   float:left;'><span id='colourPopBack_icon' class=''></span>Back<span id=colourPopBack_badge class=badge style=margin-left:1ch;></span></button>",,"</div>","Ultra Matte Lip by ColourPop</div>",
+  "<div id='laxCP' data-nsb-type=image style='' class=''><img src='Images/laxCP.jpg'  height=100% width=100% id='laxCP_img' usemap='laxCP_map'></div>",
+  "<div id='colourPopText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-weight:500; ' >Ultra Matte Lip is one of ColourPop\'s best sellers. This lightweight, longlasting formula can stand up to the test, whether it\'s looking good on a girls night out or chowing down on a well-deserved breakfast burrito! And the best part, it\'s only $6. We rate this product P for Perf!</div>",
+  "<div id='colourPopText2' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:14px; font-family:Californian FB; font-style:italic; font-weight:500; ' >Pictured Shade: LAX</div>",
+  ].join('');
+</script>
+</div>
+<a name='/stilaForm' data-role=none></a>
+<div id="stilaForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+stilaForm.innerHTML=[
+  "<div id='stilaBar' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Californian FB; font-style:italic; font-weight:bold; color:white; background-color:#6c242c;  ' >","<div id=stilaBar_addChild>",
+    "<button id='stilaBack' data-role='none' class='btn btn-default btn-md ' style='margin-top:3%; font-family:Californian FB;   float:left;'><span id='stilaBack_icon' class=''></span>Back<span id=stilaBack_badge class=badge style=margin-left:1ch;></span></button>",,"</div>","Stay All Day by stila</div>",
+  "<div id='stilaText2' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:14px; font-family:Californian FB; font-style:italic; font-weight:500; ' >Pictured Shade: Patina(Dusty Rose)</div>",
+  "<div id='Image1Copy' data-nsb-type=image style='' class=''><img src='Images/stilaPatina.jpg'  height=100% width=100% id='Image1Copy_img' usemap='Image1Copy_map'></div>",
+  "<div id='stilaText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-weight:500; ' >Stay All day is one of our favorites here at BrownBabe. This creamy, lightweight formula looks effortlessly stellar. It comes in a bunch of fabulous colors, but our personal favorite is dusty rose. This product is $24 and gets really great reviews from its users. It would certainly earn a P for Perf if it weren\'t for that pesky price tag, but today it gets a B for Bomb! Because this splurge item is definitely worth it.</div>",
   ].join('');
 </script>
 </div>
@@ -163,11 +233,13 @@ window.addEventListener('load', function() {
 window.addEventListener('load', function() {
   lipsForm.style.display = 'block';
   NSB.addProperties(lipsForm);
-  matteLabel.style.lineHeight='203px';
+  NSB.bs.addProperties(lipsBar, 'Label_bs');
+  NSB.bs.addProperties(lipsBack, 'Button_bs');
+  matteLabel.style.lineHeight='193px';
   NSB.addProperties(matteLabel);
-  glossyLabel.style.lineHeight='263px';
+  glossyLabel.style.lineHeight='227px';
   NSB.addProperties(glossyLabel);
-  creamLips.style.lineHeight='262px';
+  creamLips.style.lineHeight='225px';
   NSB.addProperties(creamLips);
   lipsForm.style.display = 'none';
 }, false);
@@ -223,6 +295,63 @@ window.addEventListener('load', function() {
   burtsLabel.style.lineHeight='236px';
   NSB.addProperties(burtsLabel);
   environmentForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: matteForm *****
+window.addEventListener('load', function() {
+  matteForm.style.display = 'block';
+  matteForm_ref = new IScroll(matteForm_scroller,{ mouseWheel:true, scrollbars:true, bounce:true, zoom:false,click:iScrollClick()});
+  matteForm.ref = matteForm_ref;
+  matteForm.scroller = matteForm_scroller;
+  NSB.addProperties(matteForm);
+  NSB.bs.addProperties(MatteLipsBar, 'Label_bs');
+  NSB.bs.addProperties(matteBack, 'Button_bs');
+
+  NSB.addProperties(matteTextBox);
+
+  NSB.addProperties(matteProTipBox);
+  NSB.addProperties.addChild(matteLipsVid);
+  NSB.addProperties(matteLipsVid);
+
+  matteHeader.style.lineHeight='40px';
+  NSB.addProperties.addChild(matteHeader);
+  NSB.addProperties(matteHeader);
+
+  NSB.addProperties(colourPop);
+  NSB.addProperties(stila);
+  matteForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: colourPopForm *****
+window.addEventListener('load', function() {
+  colourPopForm.style.display = 'block';
+  NSB.addProperties(colourPopForm);
+  colourPopBar.style.lineHeight='56px';
+  NSB.addProperties.addChild(colourPopBar);
+  NSB.addProperties(colourPopBar);
+  NSB.bs.addProperties(colourPopBack, 'Button_bs');
+  NSB.addProperties(laxCP);
+
+  NSB.addProperties(colourPopText);
+
+  NSB.addProperties(colourPopText2);
+  colourPopForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: stilaForm *****
+window.addEventListener('load', function() {
+  stilaForm.style.display = 'block';
+  NSB.addProperties(stilaForm);
+  stilaBar.style.lineHeight='56px';
+  NSB.addProperties.addChild(stilaBar);
+  NSB.addProperties(stilaBar);
+  NSB.bs.addProperties(stilaBack, 'Button_bs');
+
+  NSB.addProperties(stilaText2);
+  NSB.addProperties(Image1Copy);
+
+  NSB.addProperties(stilaText);
+  stilaForm.style.display = 'none';
 }, false);
 
 
