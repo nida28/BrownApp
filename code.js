@@ -17,6 +17,12 @@ Cheeks.onclick=function(){
 Environmental.onclick=function(){
   ChangeForm(environmentForm);
 }
+
+
+
+Label1.onmousemove=function(){
+  
+}
 lipsBack.onclick=function(){
   ChangeForm(homeForm);
 }
@@ -24,11 +30,13 @@ lipsBack.onclick=function(){
 matteLabel.onclick=function(){
   ChangeForm(matteForm);
 }
-matteLipsVid.onmousedown=function(){
-  
+
+creamLabel.onclick=function(){
+  ChangeForm(creamForm);
 }
-
-
+skinBack.onclick=function(){
+  ChangeForm(homeForm);
+}
 matteBack.onclick=function(){
   ChangeForm(lipsForm);
 }
@@ -40,9 +48,23 @@ colourPop.onclick=function(){
 stila.onclick=function(){
   ChangeForm(stilaForm);
 }
+
+PlayButton.onclick = function() {
+  matteLipsVideo.play();
+}
 colourPopBack.onclick=function(){
   ChangeForm(matteForm);
 }
 stilaBack.onclick=function(){
   ChangeForm(matteForm);
+}
+creamBack.onclick=function(){
+  ChangeForm(lipsForm);
+}
+
+burtsLogo.onclick=function(){
+  ChangeForm(burtsForm);
+}
+burtsBack.onclick=function(){
+  ChangeForm(creamForm);
 }
