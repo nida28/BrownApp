@@ -37,6 +37,19 @@ creamLabel.onclick=function(){
 skinBack.onclick=function(){
   ChangeForm(homeForm);
 }
+eyesBack.onclick=function(){
+  ChangeForm(homeForm);
+}
+cheeksBack.onclick=function(){
+  ChangeForm(homeForm);
+}
+envBack.onclick=function(){
+  ChangeForm(homeForm);
+}
+
+burtsLabel.onclick=function(){
+  ChangeForm(burtsForm);
+}
 matteBack.onclick=function(){
   ChangeForm(lipsForm);
 }
