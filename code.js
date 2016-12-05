@@ -36,6 +36,10 @@ creamLabel.onclick=function(){
 }
 skinBack.onclick=function(){
   ChangeForm(homeForm);
+}
+
+foundationLabel.onclick=function(){
+  ChangeForm(FoundationForm);
 }
 eyesBack.onclick=function(){
   ChangeForm(homeForm);
@@ -75,9 +79,24 @@ creamBack.onclick=function(){
   ChangeForm(lipsForm);
 }
 
-burtsLogo.onclick=function(){
-  ChangeForm(burtsForm);
+burtsLogo.onclick = function(){
+  ChangeForm(burtsForm);
 }
 burtsBack.onclick=function(){
   ChangeForm(creamForm);
+}
+blackUp.onclick = function() {
+    ChangeForm(blackUpForm);
+}
+
+foundBack.onclick = function() {
+    ChangeForm(skinForm);
+}
+
+
+clinique.onclick = function() {
+    ChangeForm(cliniqueForm);
+}
+blackUpBack.onclick = function() {
+    ChangeForm(FoundationForm);
 }
