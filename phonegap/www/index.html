@@ -1,0 +1,585 @@
+﻿<!DOCTYPE HTML>
+<html manifest="OfflineApp.appcache">
+<head>
+<meta charset="utf-8">
+<title>HelloWorld</title>
+<meta name="generator" content="NSB/AppStudio 6.0.5.0$pxjy" />
+<meta name='date' content='2016-12-09 13:33:14.262000' />
+<meta name='version' content='1.0.0' />
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
+<meta name='apple-mobile-web-app-capable' content='YES' />
+<meta name='mobile-web-app-capable' content='yes' />
+<meta name='apple-mobile-web-app-status-bar-style' content='default' />
+<meta name='apple-mobile-web-app-title' content='' />
+<meta name='copyright' content='Copyright 2015 ABC Company' />
+<meta http-equiv='Content-Security-Policy' content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src * blob:; img-src * data:; connect-src *;" />
+<link rel='apple-touch-icon' href='nsb/images/LauncherIcon57.png' />
+<link rel='shortcut icon' sizes='192x192' href='nsb/images/192.png' />
+<link href="nsb/nsbstyle.css" rel="stylesheet">
+<script src="nsb/jquery.js"></script>
+<link href="nsb/jquery.modal.min.css" rel="stylesheet">
+<script src="nsb/hfunc.js"></script>
+<script src="nsb/jquery.modal.min.js"></script>
+<script src="nsb/fastclick.js"></script>
+<script src="nsb/iscroll.js"></script>
+<link href="nsb/bs/css/bootstrap.min.css" rel="stylesheet">
+<script src="nsb/bs/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/530b34dcfd.js"></script>
+<script src="nsb/bs/bsFunctions.js"></script>
+
+<script src="cordova.js"></script>
+<link href="chromeManifest.json" rel="manifest">
+
+<style type="text/css">
+#homeForm {background:inherit;}
+#Label1 {position:relative; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:324px;}
+#Lips {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
+#Skin {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
+#Eyes {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
+#Cheeks {position:relative; left:initial; right:auto; top:initial; bottom:auto; height:90px; width:324px;}
+#Environmental {position:relative; left:initial; right:auto; top:auto; bottom:auto; height:90px; width:324px;}
+#lipsForm {background:inherit;}
+#lipsBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
+#lipsBack {position:absolute; left:10px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#matteLabel {position:absolute; left:0px; right:auto; top:49px; bottom:auto; height:138px; width:320px;}
+#glossyLabel {position:absolute; left:0px; right:auto; top:187px; bottom:auto; height:138px; width:320px;}
+#creamLabel {position:absolute; left:0px; right:auto; top:325px; bottom:auto; height:138px; width:320px;}
+#skinForm {background:inherit;}
+#concealerLabel {position:absolute; left:0px; right:auto; top:184px; bottom:auto; height:138px; width:320px;}
+#bbLabel {position:absolute; left:0px; right:auto; top:321px; bottom:auto; height:138px; width:320px;}
+#foundationLabel {position:absolute; left:0px; right:auto; top:49px; bottom:auto; height:138px; width:320px;}
+#skinBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
+#skinBack {position:absolute; left:11px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#eyesForm {background:inherit;}
+#eyelinerLabel {position:absolute; left:0px; right:auto; top:49px; bottom:auto; height:138px; width:320px;}
+#mascaraLabel {position:absolute; left:0px; right:auto; top:324px; bottom:auto; height:138px; width:320px;}
+#shadowLabel {position:absolute; left:0px; right:auto; top:186px; bottom:auto; height:138px; width:320px;}
+#eyesBar {position:absolute; left:0px; right:auto; top:1px; bottom:auto; height:50px; width:320px;}
+#eyesBack {position:absolute; left:6px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#cheeksForm {background:inherit;}
+#cheeksBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
+#cheeksBack {position:absolute; left:11px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#blushLabel {position:absolute; left:0px; right:auto; top:49px; bottom:auto; height:138px; width:320px;}
+#highLabel {position:absolute; left:0px; right:auto; top:186px; bottom:auto; height:138px; width:320px;}
+#bronzerLabel {position:absolute; left:0px; right:auto; top:324px; bottom:auto; height:138px; width:320px;}
+#environmentForm {background:inherit;}
+#envBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
+#bodyLabel {position:absolute; left:0px; right:auto; top:48px; bottom:auto; height:200px; width:320px;}
+#burtsLabel {position:absolute; left:0px; right:auto; top:247px; bottom:auto; height:200px; width:320px;}
+#envBack {position:absolute; left:11px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#matteForm {background:inherit;}
+#matteTextBox {position:absolute; left:0px; right:auto; top:57px; bottom:auto; height:83px; width:324px;}
+#matteProTipBox {position:absolute; left:0px; right:auto; top:150px; bottom:auto; height:45px; width:324px;}
+#matteHeader {position:absolute; left:1px; right:auto; top:341px; bottom:auto; height:40px; width:100%;}
+
+#colourPop {position:absolute; left:43px; right:auto; top:392px; bottom:auto; height:71px; width:83px;}
+#stila {position:absolute; left:184px; right:auto; top:392px; bottom:auto; height:71px; width:91px;}
+#matteLipsVideo {position:absolute; left:46px; right:auto; top:217px; bottom:auto; height:106px; width:225px;}
+#matteBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
+#matteBack {position:absolute; left:10px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#colourPopForm {background:inherit;}
+#laxCP {position:absolute; left:94px; right:auto; top:78px; bottom:auto; height:133px; width:137px;}
+#colourPopText {position:absolute; left:1px; right:auto; top:224px; bottom:auto; height:131px; width:323px;}
+#colourPopText2 {position:absolute; left:0px; right:auto; top:361px; bottom:auto; height:30px; width:324px;}
+#colourPopBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
+#colourPopBack {position:absolute; left:10px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#stilaForm {background:inherit;}
+#stilaText2 {position:absolute; left:0px; right:auto; top:420px; bottom:auto; height:32px; width:324px;}
+#stilaPatina {position:absolute; left:99px; right:auto; top:71px; bottom:auto; height:140px; width:121px;}
+#stilaText {position:absolute; left:1px; right:auto; top:224px; bottom:auto; height:188px; width:323px;}
+#stilaBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
+#stilaBack {position:absolute; left:10px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#creamForm {background:inherit;}
+#creamText {position:absolute; left:0px; right:auto; top:57px; bottom:auto; height:127px; width:324px;}
+#creamProTipBox {position:absolute; left:0px; right:auto; top:195px; bottom:auto; height:66px; width:324px;}
+#matteHeaderCopy {position:absolute; left:0px; right:auto; top:301px; bottom:auto; height:40px; width:100%;}
+
+#burtsLogo {position:absolute; left:112px; right:auto; top:359px; bottom:auto; height:77px; width:101px;}
+#creamBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
+#creamBack {position:absolute; left:10px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#burtsForm {background:inherit;}
+#burtsBerries {position:absolute; left:71px; right:auto; top:85px; bottom:auto; height:165px; width:180px;}
+#burtsBerriesText {position:absolute; left:1px; right:auto; top:285px; bottom:auto; height:131px; width:323px;}
+#burtsBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
+#burtsBack {position:absolute; left:10px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#FoundationForm {background:inherit;}
+#FoundationBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
+#foundBack {position:absolute; left:11px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#foundTextBox {position:absolute; left:0px; right:auto; top:57px; bottom:auto; height:124px; width:324px;}
+#FoundProTipBox {position:absolute; left:0px; right:auto; top:183px; bottom:auto; height:45px; width:324px;}
+#foundHeader {position:absolute; left:1px; right:auto; top:349px; bottom:auto; height:40px; width:100%;}
+
+#blackUp1 {position:absolute; left:14px; right:auto; top:436px; bottom:auto; height:51px; width:143px;}
+#clinique {position:absolute; left:189px; right:auto; top:397px; bottom:auto; height:90px; width:90px;}
+#blackUp {position:absolute; left:16px; right:auto; top:436px; bottom:auto; height:48px; width:142px;}
+#matteLipsVideoCopy {position:absolute; left:45px; right:auto; top:232px; bottom:auto; height:106px; width:225px;}
+#blackUpForm {background:inherit;}
+#blackUpBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
+#blackUpBack {position:absolute; left:11px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
+#blackUpFound {position:absolute; left:96px; right:auto; top:71px; bottom:auto; height:140px; width:140px;}
+#blackUpText {position:absolute; left:1px; right:auto; top:224px; bottom:auto; height:188px; width:323px;}
+#blackUpText2 {position:absolute; left:0px; right:auto; top:420px; bottom:auto; height:32px; width:324px;}
+#cliniqueForm {background:inherit;}
+#Video1 {position:absolute; left:115px; right:auto; top:129px; bottom:auto; height:66px; width:100px;}
+</style>
+
+</head>
+<body style="margin:0px;-ms-touch-action:none;font-family:helvetica;">
+<noscript><h1>JavaScript must be enabled!</h1></noscript>
+<script>window.addEventListener('load', function() {new FastClick.attach(document.body)}, false)</script>
+<div data-role="page" id="NSBPage" data-theme="a" style="position:absolute; width:100%; background-color:inherit; ">
+<a name='/homeForm' data-role=none></a>
+<div id=homeForm_scroller>
+<div id="homeForm" class="nsb-form" style="position:relative; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:-1px; width:100%; ">
+<script>
+homeForm.innerHTML=[
+  "<span id='Label1' style='font-size:25px; font-family:Californian FB; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>BrownBabe</span>",
+  "<div id='Lips' data-nsb-type=image style='float:left;' class=''><img src='Images/lips.jpg'  height=100% width=100% id='Lips_img' usemap='Lips_map'></div>",
+  "<div id='Skin' data-nsb-type=image style='float:left;' class=''><img src='Images/skin.jpg'  height=100% width=100% id='Skin_img' usemap='Skin_map'></div>",
+  "<div id='Eyes' data-nsb-type=image style='float:left;' class=''><img src='Images/eyes.jpg'  height=100% width=100% id='Eyes_img' usemap='Eyes_map'></div>",
+  "<div id='Cheeks' data-nsb-type=image style='float:left;' class=''><img src='Images/cheeks.jpg'  height=100% width=100% id='Cheeks_img' usemap='Cheeks_map'></div>",
+  "<div id='Environmental' data-nsb-type=image style='float:left;' class=''><img src='Images/env.jpg'  height=100% width=100% id='Environmental_img' usemap='Environmental_map'></div>",
+  ].join('');
+</script>
+</div>
+</div>
+<a name='/lipsForm' data-role=none></a>
+<div id="lipsForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
+<script>
+lipsForm.innerHTML=[
+  "<span id='lipsBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Lips</span>",
+
+    "<button id='lipsBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='lipsBack_icon' class=''></span>Back<span id=lipsBack_badge class=badge style=margin-left:1ch;></span></button>",
+  "<div id='matteLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; font-weight:100; border-width:2px; border-style:solid; border-color:#842950; '>Matte Lips</div>",
+  "<div id='glossyLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; font-weight:100; border-width:2px; border-style:solid; border-color:#842950; '>Glossy Lips</div>",
+  "<div id='creamLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Cream Lips</div>",
+  ].join('');
+</script>
+</div>
+<a name='/skinForm' data-role=none></a>
+<div id=skinForm_scroller>
+<div id="skinForm" class="nsb-form jqmodal" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+skinForm.innerHTML=[
+  "<div id='concealerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Concealer</div>",
+  "<div id='bbLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#6c242c; '>BB and CC Cream</div>",
+  "<div id='foundationLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Foundation</div>",
+  "<span id='skinBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Skin</span>",
+
+    "<button id='skinBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='skinBack_icon' class=''></span>Back<span id=skinBack_badge class=badge style=margin-left:1ch;></span></button>",
+  ].join('');
+</script>
+</div>
+</div>
+<a name='/eyesForm' data-role=none></a>
+<div id="eyesForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
+<script>
+eyesForm.innerHTML=[
+  "<div id='eyelinerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Eyeliner</div>",
+  "<div id='mascaraLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Mascara</div>",
+  "<div id='shadowLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Eye Shadow</div>",
+  "<div id='eyesBar' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-top:3px; font-size:28px; font-family:Ebrima; font-weight:300; color:white; background-color:#842950; '>Eyes</div>",
+
+    "<button id='eyesBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; '><span id='eyesBack_icon' class=''></span>Back<span id=eyesBack_badge class=badge style=margin-left:1ch;></span></button>",
+  ].join('');
+</script>
+</div>
+<a name='/cheeksForm' data-role=none></a>
+<div id="cheeksForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
+<script>
+cheeksForm.innerHTML=[
+  "<span id='cheeksBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Cheeks</span>",
+
+    "<button id='cheeksBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='cheeksBack_icon' class=''></span>Back<span id=cheeksBack_badge class=badge style=margin-left:1ch;></span></button>",
+  "<div id='blushLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Blush</div>",
+  "<div id='highLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Highlighter</div>",
+  "<div id='bronzerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Bronzer</div>",
+  ].join('');
+</script>
+</div>
+<a name='/environmentForm' data-role=none></a>
+<div id="environmentForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
+<script>
+environmentForm.innerHTML=[
+  "<span id='envBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Environment</span>",
+  "<div id='bodyLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>The Body Shop</div>",
+  "<div id='burtsLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Burt\'s Bees</div>",
+
+    "<button id='envBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='envBack_icon' class=''></span>Back<span id=envBack_badge class=badge style=margin-left:1ch;></span></button>",
+  ].join('');
+</script>
+</div>
+<a name='/matteForm' data-role=none></a>
+<div id=matteForm_scroller>
+<div id="matteForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
+<script>
+matteForm.innerHTML=[
+  "<div id='matteTextBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Matte lipsticks are a gorgeous, simple way to take your makeup game to a whole new level.  For the best application, your lips should be dry and exfoliated.</div>",
+  "<div id='matteProTipBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pro Tip: Matte Lipsticks can be kind of drying. Stay hydrated to keep this look flawless!</div>",
+  "<div id='matteHeader' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Ebrima; font-weight:500; background-color:lightgray;  '>","<div id=matteHeader_addChild>",,"</div>","Brands to Try</div>",
+  "<div id='colourPop' data-nsb-type=image style='' class=''><img src='Images/colourpop-logo.png'  height=100% width=100% id='colourPop_img' usemap='colourPop_map'></div>",
+  "<div id='stila' data-nsb-type=image style='' class=''><img src='Images/StilaLogo.png'  height=100% width=100% id='stila_img' usemap='stila_map'></div>",
+  "<video id='matteLipsVideo' style='' class='' src='Images/stila.mp4'   controls ></video>",
+  "<span id='matteBar' style='font-size:24px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Matte Lips</span>",
+
+    "<button id='matteBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='matteBack_icon' class=''></span>Back<span id=matteBack_badge class=badge style=margin-left:1ch;></span></button>",
+  ].join('');
+</script>
+</div>
+</div>
+<a name='/colourPopForm' data-role=none></a>
+<div id="colourPopForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
+<script>
+colourPopForm.innerHTML=[
+  "<div id='laxCP' data-nsb-type=image style='' class=''><img src='Images/lax.jpeg'  height=100% width=100% id='laxCP_img' usemap='laxCP_map'></div>",
+  "<div id='colourPopText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Ultra Matte Lip is truly ColourPop\'s signature product. \u000AThis lightweight, longlasting formula can stand up to the test, \u000Awhether it\'s looking good on a girls night out or chowing down \u000Aon a well-deserved breakfast burrito! And the best part, \u000Ait\'s only <a href= \" https://colourpop.com/collections/ultra-matte-lip/products/lax \" target= \u201C_blank\u201D>$6</a>. \u000AWe rate this product P for Perf!</div>",
+  "<div id='colourPopText2' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pictured Shade: LAX</div>",
+  "<span id='colourPopBar' style='font-size:24px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Colour Pop</span>",
+
+    "<button id='colourPopBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='colourPopBack_icon' class=''></span>Back<span id=colourPopBack_badge class=badge style=margin-left:1ch;></span></button>",
+  ].join('');
+</script>
+</div>
+<a name='/stilaForm' data-role=none></a>
+<div id="stilaForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
+<script>
+stilaForm.innerHTML=[
+  "<div id='stilaText2' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pictured Shade: Patina(Dusty Rose)</div>",
+  "<div id='stilaPatina' data-nsb-type=image style='' class=''><img src='Images/stilaPatina.jpg'  height=100% width=100% id='stilaPatina_img' usemap='stilaPatina_map'></div>",
+  "<div id='stilaText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Stay All day is one of our favorites here at BrownBabe. This creamy, lightweight formula looks effortlessly stellar. It comes in a bunch of fabulous colors, but our personal favorite is Patina. This product is $24 and gets really great reviews from its users. It would certainly earn a P for Perf if it weren\'t for that pesky price tag, but today it gets a B for Bomb! Because this splurge item is definitely worth it.</div>",
+  "<span id='stilaBar' style='font-size:24px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Stila</span>",
+
+    "<button id='stilaBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='stilaBack_icon' class=''></span>Back<span id=stilaBack_badge class=badge style=margin-left:1ch;></span></button>",
+  ].join('');
+</script>
+</div>
+<a name='/creamForm' data-role=none></a>
+<div id=creamForm_scroller>
+<div id="creamForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
+<script>
+creamForm.innerHTML=[
+  "<div id='creamText' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Cream lipsticks have a distinctly, well, creamy look to them on your lips. They typically aren\'t very shimmery, but they may have a bit of shine depending on the product.  They tend to be a hydrating alternative to matte finishes and a more casual alternative to glossy finishes.</div>",
+  "<div id='creamProTipBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pro Tip: Satin finishes are a happy medium between cream and matte. Hydrating, but less glossy!</div>",
+  "<div id='matteHeaderCopy' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Ebrima; font-style:italic; font-weight:500; background-color:lightgray;  '>","<div id=matteHeaderCopy_addChild>",,"</div>","Brands to Try</div>",
+  "<div id='burtsLogo' data-nsb-type=image style='' class=''><img src='Images/BurtsBees.png'  height=100% width=100% id='burtsLogo_img' usemap='burtsLogo_map'></div>",
+  "<span id='creamBar' style='font-size:24px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Cream Lips</span>",
+
+    "<button id='creamBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='creamBack_icon' class=''></span>Back<span id=creamBack_badge class=badge style=margin-left:1ch;></span></button>",
+  ].join('');
+</script>
+</div>
+</div>
+<a name='/burtsForm' data-role=none></a>
+<div id="burtsForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+burtsForm.innerHTML=[
+  "<div id='burtsBerries' data-nsb-type=image style='' class=''><img src='Images/burtsBerries.jpg'  height=100% width=100% id='burtsBerries_img' usemap='burtsBerries_map'></div>",
+  "<div id='burtsBerriesText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Burt\'s Bees carries 18 shades of this satin finish lipstick. Each shade offers up to 8 hours of color, coverage, and hydration. This $9 steal is a 100% natural product made with recycled packaging. Did we say beautiful, green, and cheap?! You bet, this product gets a P for Perf from us!</div>",
+  "<span id='burtsBar' style='font-size:24px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Burt's Bees</span>",
+
+    "<button id='burtsBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='burtsBack_icon' class=''></span>Back<span id=burtsBack_badge class=badge style=margin-left:1ch;></span></button>",
+  ].join('');
+</script>
+</div>
+<a name='/FoundationForm' data-role=none></a>
+<div id=FoundationForm_scroller>
+<div id="FoundationForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+FoundationForm.innerHTML=[
+  "<span id='FoundationBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Foundation</span>",
+
+    "<button id='foundBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='foundBack_icon' class=''></span>Back<span id=foundBack_badge class=badge style=margin-left:1ch;></span></button>",
+  "<div id='foundTextBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Foundation is a great way to even out your complexion and \u000Aadd radiance to your skin. While it has traditionally been difficult \u000Ato find flattering foundation shades for darker skin tones, more \u000Acompanies are now making an effort to provide a wider range of shades. </div>",
+  "<div id='FoundProTipBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pro Tip: Make sure to match your undertone with your foundation for best results. </div>",
+  "<div id='foundHeader' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Ebrima; font-weight:500; background-color:lightgray;  '>","<div id=foundHeader_addChild>",,"</div>","Brands to Try</div>",
+  "<div id='blackUp1' data-nsb-type=image style='' class=''><img src='Images/BlackUP.jpg'  height=100% width=100% id='blackUp1_img' usemap='blackUp1_map'></div>",
+  "<div id='clinique' data-nsb-type=image style='' class=''><img src='Images/CliniqueLogo.gif'  height=100% width=100% id='clinique_img' usemap='clinique_map'></div>",
+
+    "<button id='blackUp' data-role='none' class='btn btn-default btn-md ' style='background-color:transparent; border-width:0px; border-color:transparent; '><span id='blackUp_icon' class=''></span><span id=blackUp_badge class=badge style=margin-left:1ch;></span></button>",
+  "<video id='matteLipsVideoCopy' style='' class='' src='Images/blackup.mp4'   controls ></video>",
+  ].join('');
+</script>
+</div>
+</div>
+<a name='/blackUpForm' data-role=none></a>
+<div id="blackUpForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+blackUpForm.innerHTML=[
+  "<span id='blackUpBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>black|Up</span>",
+
+    "<button id='blackUpBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='blackUpBack_icon' class=''></span>Back<span id=blackUpBack_badge class=badge style=margin-left:1ch;></span></button>",
+  "<div id='blackUpFound' data-nsb-type=image style='' class=''><img src='Images/blackUpFound.jpg'  height=100% width=100% id='blackUpFound_img' usemap='blackUpFound_map'></div>",
+  "<div id='blackUpText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>This cream foundation slides on like a dream, and \u000Ait is one of our favorites \u2013 it boasts of 15 different shades. \u000AAs advertised, it offers great coverage and concealer might not be needed \u000Aif you don\u2019t happen to have dark spots. Users rave about this product, \u000Abut because of the hefty price tag \u000A(<a href= \"http://www.blackupcosmetics.com/foundation/85-full-coverage-cream-foundation.html\" target= \u201C_blank\u201D>$43.50</a>), \u000Awe have to give this product a B for bomb. </div>",
+  "<div id='blackUpText2' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pictured Shade: HC12</div>",
+  ].join('');
+</script>
+</div>
+<a name='/cliniqueForm' data-role=none></a>
+<div id="cliniqueForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
+<script>
+cliniqueForm.innerHTML=[
+  "<video id='Video1' style='' class='' src=''    ></video>",
+  ].join('');
+</script>
+</div>
+</div>
+<script>
+if(!navigator.cookieEnabled) NSB.MsgBox('Please turn cookies on.');
+(function(){var all=document.getElementsByTagName('*');for(var i=0;i<all.length;i++)if(all[i].id!=''&&typeof all[i].id!='undefined'&&typeof window[all[i].id]=='undefined')window[all[i].id]=all[i];})()
+var NSB = NSB || {};
+NSB.currentForm = homeForm;
+NSB.stopOnError = True;
+NSB.enableBrowserArrows = true;
+NSB.enableAppScroll = false;
+NSB.newVersionWarning = false;
+NSB.id = 'HelloWorld';
+NSB.voltAppId = '';
+if ($.mobile != undefined) $.mobile.hashListeningEnabled = false;
+
+// ***** Code for form: homeForm *****
+window.addEventListener('load', function() {
+  homeForm.style.display = 'block';
+  homeForm_ref = new IScroll(homeForm_scroller,{ mouseWheel:true, scrollbars:true, bounce:true, zoom:false,click:iScrollClick()});
+  homeForm.ref = homeForm_ref;
+  homeForm.scroller = homeForm_scroller;
+  NSB.addProperties(homeForm);
+  NSB.bs.addProperties(Label1, 'Label_bs');
+  NSB.addProperties(Lips);
+  NSB.addProperties(Skin);
+  NSB.addProperties(Eyes);
+  NSB.addProperties(Cheeks);
+  NSB.addProperties(Environmental);
+  homeForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: lipsForm *****
+window.addEventListener('load', function() {
+  lipsForm.style.display = 'block';
+  NSB.addProperties(lipsForm);
+  NSB.bs.addProperties(lipsBar, 'Label_bs');
+  NSB.bs.addProperties(lipsBack, 'Button_bs');
+  matteLabel.style.lineHeight='138px';
+  NSB.addProperties(matteLabel);
+  glossyLabel.style.lineHeight='138px';
+  NSB.addProperties(glossyLabel);
+  creamLabel.style.lineHeight='138px';
+  NSB.addProperties(creamLabel);
+  lipsForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: skinForm *****
+window.addEventListener('load', function() {
+  skinForm.style.display = 'block';
+  skinForm_ref = new IScroll(skinForm_scroller,{ mouseWheel:true, scrollbars:true, bounce:true, zoom:false,click:iScrollClick()});
+  skinForm.ref = skinForm_ref;
+  skinForm.scroller = skinForm_scroller;
+  NSB.addProperties(skinForm);
+  concealerLabel.style.lineHeight='138px';
+  NSB.addProperties(concealerLabel);
+  bbLabel.style.lineHeight='138px';
+  NSB.addProperties(bbLabel);
+  foundationLabel.style.lineHeight='138px';
+  NSB.addProperties(foundationLabel);
+  NSB.bs.addProperties(skinBar, 'Label_bs');
+  NSB.bs.addProperties(skinBack, 'Button_bs');
+  skinForm.style.display = 'none';
+  $('#skinForm').on($.jqmodal.CLOSE, skinForm.onhide);
+  skinForm.style.position='relative';
+  skinForm.style.left='auto';
+  skinForm.style.top='auto';
+}, false);
+
+// ***** Code for form: eyesForm *****
+window.addEventListener('load', function() {
+  eyesForm.style.display = 'block';
+  NSB.addProperties(eyesForm);
+  eyelinerLabel.style.lineHeight='138px';
+  NSB.addProperties(eyelinerLabel);
+  mascaraLabel.style.lineHeight='138px';
+  NSB.addProperties(mascaraLabel);
+  shadowLabel.style.lineHeight='138px';
+  NSB.addProperties(shadowLabel);
+
+  NSB.addProperties(eyesBar);
+  NSB.bs.addProperties(eyesBack, 'Button_bs');
+  eyesForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: cheeksForm *****
+window.addEventListener('load', function() {
+  cheeksForm.style.display = 'block';
+  NSB.addProperties(cheeksForm);
+  NSB.bs.addProperties(cheeksBar, 'Label_bs');
+  NSB.bs.addProperties(cheeksBack, 'Button_bs');
+  blushLabel.style.lineHeight='138px';
+  NSB.addProperties(blushLabel);
+  highLabel.style.lineHeight='138px';
+  NSB.addProperties(highLabel);
+  bronzerLabel.style.lineHeight='138px';
+  NSB.addProperties(bronzerLabel);
+  cheeksForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: environmentForm *****
+window.addEventListener('load', function() {
+  environmentForm.style.display = 'block';
+  NSB.addProperties(environmentForm);
+  NSB.bs.addProperties(envBar, 'Label_bs');
+  bodyLabel.style.lineHeight='200px';
+  NSB.addProperties(bodyLabel);
+  burtsLabel.style.lineHeight='200px';
+  NSB.addProperties(burtsLabel);
+  NSB.bs.addProperties(envBack, 'Button_bs');
+  environmentForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: matteForm *****
+window.addEventListener('load', function() {
+  matteForm.style.display = 'block';
+  matteForm_ref = new IScroll(matteForm_scroller,{ mouseWheel:true, scrollbars:true, bounce:true, zoom:false,click:iScrollClick()});
+  matteForm.ref = matteForm_ref;
+  matteForm.scroller = matteForm_scroller;
+  NSB.addProperties(matteForm);
+
+  NSB.addProperties(matteTextBox);
+
+  NSB.addProperties(matteProTipBox);
+  matteHeader.style.lineHeight='40px';
+  NSB.addProperties.addChild(matteHeader);
+  NSB.addProperties(matteHeader);
+
+  NSB.addProperties(colourPop);
+  NSB.addProperties(stila);
+  NSB.addProperties(matteLipsVideo);
+  NSB.bs.addProperties(matteBar, 'Label_bs');
+  NSB.bs.addProperties(matteBack, 'Button_bs');
+  matteForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: colourPopForm *****
+window.addEventListener('load', function() {
+  colourPopForm.style.display = 'block';
+  NSB.addProperties(colourPopForm);
+  NSB.addProperties(laxCP);
+
+  NSB.addProperties(colourPopText);
+
+  NSB.addProperties(colourPopText2);
+  NSB.bs.addProperties(colourPopBar, 'Label_bs');
+  NSB.bs.addProperties(colourPopBack, 'Button_bs');
+  colourPopBack.onclick=function(){ChangeForm(matteForm)};
+  colourPopForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: stilaForm *****
+window.addEventListener('load', function() {
+  stilaForm.style.display = 'block';
+  NSB.addProperties(stilaForm);
+
+  NSB.addProperties(stilaText2);
+  NSB.addProperties(stilaPatina);
+
+  NSB.addProperties(stilaText);
+  NSB.bs.addProperties(stilaBar, 'Label_bs');
+  NSB.bs.addProperties(stilaBack, 'Button_bs');
+  stilaBack.onclick=function(){ChangeForm(matteForm)};
+  stilaForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: creamForm *****
+window.addEventListener('load', function() {
+  creamForm.style.display = 'block';
+  creamForm_ref = new IScroll(creamForm_scroller,{ mouseWheel:true, scrollbars:true, bounce:true, zoom:false,click:iScrollClick()});
+  creamForm.ref = creamForm_ref;
+  creamForm.scroller = creamForm_scroller;
+  NSB.addProperties(creamForm);
+
+  NSB.addProperties(creamText);
+
+  NSB.addProperties(creamProTipBox);
+  matteHeaderCopy.style.lineHeight='40px';
+  NSB.addProperties.addChild(matteHeaderCopy);
+  NSB.addProperties(matteHeaderCopy);
+
+  NSB.addProperties(burtsLogo);
+  NSB.bs.addProperties(creamBar, 'Label_bs');
+  NSB.bs.addProperties(creamBack, 'Button_bs');
+  creamBack.onclick=function(){ChangeForm(lipsForm)};
+  creamForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: burtsForm *****
+window.addEventListener('load', function() {
+  burtsForm.style.display = 'block';
+  NSB.addProperties(burtsForm);
+  NSB.addProperties(burtsBerries);
+
+  NSB.addProperties(burtsBerriesText);
+  NSB.bs.addProperties(burtsBar, 'Label_bs');
+  NSB.bs.addProperties(burtsBack, 'Button_bs');
+  burtsForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: FoundationForm *****
+window.addEventListener('load', function() {
+  FoundationForm.style.display = 'block';
+  FoundationForm_ref = new IScroll(FoundationForm_scroller,{ mouseWheel:true, scrollbars:true, bounce:true, zoom:false,click:iScrollClick()});
+  FoundationForm.ref = FoundationForm_ref;
+  FoundationForm.scroller = FoundationForm_scroller;
+  NSB.addProperties(FoundationForm);
+  NSB.bs.addProperties(FoundationBar, 'Label_bs');
+  NSB.bs.addProperties(foundBack, 'Button_bs');
+  foundBack.onclick=function(){ChangeForm(skinForm)};
+
+  NSB.addProperties(foundTextBox);
+
+  NSB.addProperties(FoundProTipBox);
+  foundHeader.style.lineHeight='40px';
+  NSB.addProperties.addChild(foundHeader);
+  NSB.addProperties(foundHeader);
+
+  NSB.addProperties(blackUp1);
+  NSB.addProperties(clinique);
+  NSB.bs.addProperties(blackUp, 'Button_bs');
+  blackUp.onclick=function(){ChangeForm(blackUpForm)};
+  NSB.addProperties(matteLipsVideoCopy);
+  FoundationForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: blackUpForm *****
+window.addEventListener('load', function() {
+  blackUpForm.style.display = 'block';
+  NSB.addProperties(blackUpForm);
+  NSB.bs.addProperties(blackUpBar, 'Label_bs');
+  NSB.bs.addProperties(blackUpBack, 'Button_bs');
+  blackUpBack.onclick=function(){ChangeForm(FoundationForm)};
+  NSB.addProperties(blackUpFound);
+
+  NSB.addProperties(blackUpText);
+
+  NSB.addProperties(blackUpText2);
+  blackUpForm.style.display = 'none';
+}, false);
+
+// ***** Code for form: cliniqueForm *****
+window.addEventListener('load', function() {
+  cliniqueForm.style.display = 'block';
+  NSB.addProperties(cliniqueForm);
+  NSB.addProperties(Video1);
+  cliniqueForm.style.display = 'none';
+}, false);
+
+
+window.addEventListener('orientationchange', function(){window.scrollTo(0,0)});
+window.addEventListener('load', function() {
+  browserWarningMessage('Please use Google Chrome, Apple Safari or another supported browser.');
+  homeForm.style.display = 'block';
+  if (NSB.enableBrowserArrows) location.hash = '#/homeForm';
+  Main();
+  if (typeof(homeForm.onshow)=='function') homeForm.onshow();
+}, false);
+</script>
+<script src='code.js'></script>
+
+</body>
+</html>

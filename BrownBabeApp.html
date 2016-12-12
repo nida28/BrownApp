@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>HelloWorld</title>
-<meta name="generator" content="NSB/AppStudio 6.0.1.0$pxjy" />
-<meta name='date' content='2016-12-05 10:11:21.655000' />
+<meta name="generator" content="NSB/AppStudio 6.0.5.0$pxjy" />
+<meta name='date' content='2016-12-09 13:33:15.335000' />
 <meta name='version' content='1.0.0' />
 <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
 <meta name='apple-mobile-web-app-capable' content='YES' />
@@ -13,12 +13,11 @@
 <meta name='apple-mobile-web-app-title' content='' />
 <meta name='copyright' content='Copyright 2015 ABC Company' />
 <meta http-equiv='Content-Security-Policy' content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src * blob:; img-src * data:; connect-src *;" />
-<noscript><h1>JavaScript must be enabled!</h1></noscript>
 <link rel='apple-touch-icon' href='nsb/images/LauncherIcon57.png' />
 <link rel='shortcut icon' sizes='192x192' href='nsb/images/192.png' />
 <link href="nsb/nsbstyle.css" rel="stylesheet">
 <script src="nsb/jquery.js"></script>
-<link href="nsb/jquery.modal.css" rel="stylesheet">
+<link href="nsb/jquery.modal.min.css" rel="stylesheet">
 <script src="nsb/hfunc.js"></script>
 <script src="nsb/jquery.modal.min.js"></script>
 <script src="nsb/fastclick.js"></script>
@@ -28,6 +27,7 @@
 <script src="https://use.fontawesome.com/530b34dcfd.js"></script>
 <script src="nsb/bs/bsFunctions.js"></script>
 
+<script src="cordova.js"></script>
 <link href="chromeManifest.json" rel="manifest">
 
 <style type="text/css">
@@ -106,11 +106,13 @@
 #FoundationBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
 #foundBack {position:absolute; left:11px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
 #foundTextBox {position:absolute; left:0px; right:auto; top:57px; bottom:auto; height:124px; width:324px;}
-#FoundProTipBox {position:absolute; left:0px; right:auto; top:198px; bottom:auto; height:45px; width:324px;}
-#foundHeader {position:absolute; left:1px; right:auto; top:269px; bottom:auto; height:40px; width:100%;}
+#FoundProTipBox {position:absolute; left:0px; right:auto; top:183px; bottom:auto; height:45px; width:324px;}
+#foundHeader {position:absolute; left:1px; right:auto; top:349px; bottom:auto; height:40px; width:100%;}
 
-#blackUp {position:absolute; left:19px; right:auto; top:347px; bottom:auto; height:51px; width:143px;}
-#clinique {position:absolute; left:194px; right:auto; top:339px; bottom:auto; height:90px; width:90px;}
+#blackUp1 {position:absolute; left:14px; right:auto; top:436px; bottom:auto; height:51px; width:143px;}
+#clinique {position:absolute; left:189px; right:auto; top:397px; bottom:auto; height:90px; width:90px;}
+#blackUp {position:absolute; left:16px; right:auto; top:436px; bottom:auto; height:48px; width:142px;}
+#matteLipsVideoCopy {position:absolute; left:45px; right:auto; top:232px; bottom:auto; height:106px; width:225px;}
 #blackUpForm {background:inherit;}
 #blackUpBar {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:50px; width:320px;}
 #blackUpBack {position:absolute; left:11px; right:auto; top:6px; bottom:auto; height:auto; width:auto;}
@@ -118,11 +120,12 @@
 #blackUpText {position:absolute; left:1px; right:auto; top:224px; bottom:auto; height:188px; width:323px;}
 #blackUpText2 {position:absolute; left:0px; right:auto; top:420px; bottom:auto; height:32px; width:324px;}
 #cliniqueForm {background:inherit;}
-
+#Video1 {position:absolute; left:115px; right:auto; top:129px; bottom:auto; height:66px; width:100px;}
 </style>
 
 </head>
 <body style="margin:0px;-ms-touch-action:none;font-family:helvetica;">
+<noscript><h1>JavaScript must be enabled!</h1></noscript>
 <script>window.addEventListener('load', function() {new FastClick.attach(document.body)}, false)</script>
 <div data-role="page" id="NSBPage" data-theme="a" style="position:absolute; width:100%; background-color:inherit; ">
 <a name='/homeForm' data-role=none></a>
@@ -131,11 +134,11 @@
 <script>
 homeForm.innerHTML=[
   "<span id='Label1' style='font-size:25px; font-family:Californian FB; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>BrownBabe</span>",
-  "<div id='Lips' data-nsb-type=image style='float:left;' class=''><img src='Images/UnsplashLipsSmall.jpg'  height=100% width=100% id='Lips_img' usemap='Lips_map'></div>",
-  "<div id='Skin' data-nsb-type=image style='float:left;' class=''><img src='Images/UnsplashSkinSmall.jpg'  height=100% width=100% id='Skin_img' usemap='Skin_map'></div>",
-  "<div id='Eyes' data-nsb-type=image style='float:left;' class=''><img src='Images/AppEyesSmall.jpg'  height=100% width=100% id='Eyes_img' usemap='Eyes_map'></div>",
-  "<div id='Cheeks' data-nsb-type=image style='float:left;' class=''><img src='Images/UnsplashCheeksSmall.jpg'  height=100% width=100% id='Cheeks_img' usemap='Cheeks_map'></div>",
-  "<div id='Environmental' data-nsb-type=image style='float:left;' class=''><img src='Images/UnsplashEnvironmentalSmall.jpg'  height=100% width=100% id='Environmental_img' usemap='Environmental_map'></div>",
+  "<div id='Lips' data-nsb-type=image style='float:left;' class=''><img src='Images/lips.jpg'  height=100% width=100% id='Lips_img' usemap='Lips_map'></div>",
+  "<div id='Skin' data-nsb-type=image style='float:left;' class=''><img src='Images/skin.jpg'  height=100% width=100% id='Skin_img' usemap='Skin_map'></div>",
+  "<div id='Eyes' data-nsb-type=image style='float:left;' class=''><img src='Images/eyes.jpg'  height=100% width=100% id='Eyes_img' usemap='Eyes_map'></div>",
+  "<div id='Cheeks' data-nsb-type=image style='float:left;' class=''><img src='Images/cheeks.jpg'  height=100% width=100% id='Cheeks_img' usemap='Cheeks_map'></div>",
+  "<div id='Environmental' data-nsb-type=image style='float:left;' class=''><img src='Images/env.jpg'  height=100% width=100% id='Environmental_img' usemap='Environmental_map'></div>",
   ].join('');
 </script>
 </div>
@@ -146,10 +149,10 @@ homeForm.innerHTML=[
 lipsForm.innerHTML=[
   "<span id='lipsBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Lips</span>",
 
-    "<button id='lipsBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2;   '><span id='lipsBack_icon' class=''></span>Back<span id=lipsBack_badge class=badge style=margin-left:1ch;></span></button>",
-  "<div id='matteLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; font-weight:100; border-width:2px; border-style:solid; border-color:#842950; ' >Matte Lips</div>",
-  "<div id='glossyLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; font-weight:100; border-width:2px; border-style:solid; border-color:#842950; ' >Glossy Lips</div>",
-  "<div id='creamLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; ' >Cream Lips</div>",
+    "<button id='lipsBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='lipsBack_icon' class=''></span>Back<span id=lipsBack_badge class=badge style=margin-left:1ch;></span></button>",
+  "<div id='matteLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; font-weight:100; border-width:2px; border-style:solid; border-color:#842950; '>Matte Lips</div>",
+  "<div id='glossyLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; font-weight:100; border-width:2px; border-style:solid; border-color:#842950; '>Glossy Lips</div>",
+  "<div id='creamLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Cream Lips</div>",
   ].join('');
 </script>
 </div>
@@ -158,12 +161,12 @@ lipsForm.innerHTML=[
 <div id="skinForm" class="nsb-form jqmodal" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
 <script>
 skinForm.innerHTML=[
-  "<div id='concealerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; ' >Concealer</div>",
-  "<div id='bbLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#6c242c; ' >BB and CC Cream</div>",
-  "<div id='foundationLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; ' >Foundation</div>",
+  "<div id='concealerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Concealer</div>",
+  "<div id='bbLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#6c242c; '>BB and CC Cream</div>",
+  "<div id='foundationLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Foundation</div>",
   "<span id='skinBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Skin</span>",
 
-    "<button id='skinBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2;   '><span id='skinBack_icon' class=''></span>Back<span id=skinBack_badge class=badge style=margin-left:1ch;></span></button>",
+    "<button id='skinBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='skinBack_icon' class=''></span>Back<span id=skinBack_badge class=badge style=margin-left:1ch;></span></button>",
   ].join('');
 </script>
 </div>
@@ -172,12 +175,12 @@ skinForm.innerHTML=[
 <div id="eyesForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
 <script>
 eyesForm.innerHTML=[
-  "<div id='eyelinerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; ' >Eyeliner</div>",
-  "<div id='mascaraLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; ' >Mascara</div>",
-  "<div id='shadowLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; ' >Eye Shadow</div>",
-  "<div id='eyesBar' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-top:3px; font-size:28px; font-family:Ebrima; font-weight:300; color:white; background-color:#842950; ' >Eyes</div>",
+  "<div id='eyelinerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Eyeliner</div>",
+  "<div id='mascaraLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Mascara</div>",
+  "<div id='shadowLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Eye Shadow</div>",
+  "<div id='eyesBar' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-top:3px; font-size:28px; font-family:Ebrima; font-weight:300; color:white; background-color:#842950; '>Eyes</div>",
 
-    "<button id='eyesBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima;   '><span id='eyesBack_icon' class=''></span>Back<span id=eyesBack_badge class=badge style=margin-left:1ch;></span></button>",
+    "<button id='eyesBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; '><span id='eyesBack_icon' class=''></span>Back<span id=eyesBack_badge class=badge style=margin-left:1ch;></span></button>",
   ].join('');
 </script>
 </div>
@@ -187,10 +190,10 @@ eyesForm.innerHTML=[
 cheeksForm.innerHTML=[
   "<span id='cheeksBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Cheeks</span>",
 
-    "<button id='cheeksBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2;   '><span id='cheeksBack_icon' class=''></span>Back<span id=cheeksBack_badge class=badge style=margin-left:1ch;></span></button>",
-  "<div id='blushLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; ' >Blush</div>",
-  "<div id='highLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; ' >Highlighter</div>",
-  "<div id='bronzerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; ' >Bronzer</div>",
+    "<button id='cheeksBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='cheeksBack_icon' class=''></span>Back<span id=cheeksBack_badge class=badge style=margin-left:1ch;></span></button>",
+  "<div id='blushLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Blush</div>",
+  "<div id='highLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Highlighter</div>",
+  "<div id='bronzerLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Bronzer</div>",
   ].join('');
 </script>
 </div>
@@ -199,10 +202,10 @@ cheeksForm.innerHTML=[
 <script>
 environmentForm.innerHTML=[
   "<span id='envBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Environment</span>",
-  "<div id='bodyLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; ' >The Body Shop</div>",
-  "<div id='burtsLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; ' >Burt\'s Bees</div>",
+  "<div id='bodyLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>The Body Shop</div>",
+  "<div id='burtsLabel' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:25px; font-family:Ebrima; border-width:2px; border-style:solid; border-color:#842950; '>Burt\'s Bees</div>",
 
-    "<button id='envBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2;   '><span id='envBack_icon' class=''></span>Back<span id=envBack_badge class=badge style=margin-left:1ch;></span></button>",
+    "<button id='envBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='envBack_icon' class=''></span>Back<span id=envBack_badge class=badge style=margin-left:1ch;></span></button>",
   ].join('');
 </script>
 </div>
@@ -211,15 +214,15 @@ environmentForm.innerHTML=[
 <div id="matteForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
 <script>
 matteForm.innerHTML=[
-  "<div id='matteTextBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; ' >Matte lipsticks are a gorgeous, simple way to take your makeup game to a whole new level.  For the best application, your lips should be dry and exfoliated.</div>",
-  "<div id='matteProTipBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; ' >Pro Tip: Matte Lipsticks can be kind of drying. Stay hydrated to keep this look flawless!</div>",
-  "<div id='matteHeader' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Ebrima; font-weight:500; background-color:lightgray;  ' >","<div id=matteHeader_addChild>",,"</div>","Brands to Try</div>",
+  "<div id='matteTextBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Matte lipsticks are a gorgeous, simple way to take your makeup game to a whole new level.  For the best application, your lips should be dry and exfoliated.</div>",
+  "<div id='matteProTipBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pro Tip: Matte Lipsticks can be kind of drying. Stay hydrated to keep this look flawless!</div>",
+  "<div id='matteHeader' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Ebrima; font-weight:500; background-color:lightgray;  '>","<div id=matteHeader_addChild>",,"</div>","Brands to Try</div>",
   "<div id='colourPop' data-nsb-type=image style='' class=''><img src='Images/colourpop-logo.png'  height=100% width=100% id='colourPop_img' usemap='colourPop_map'></div>",
   "<div id='stila' data-nsb-type=image style='' class=''><img src='Images/StilaLogo.png'  height=100% width=100% id='stila_img' usemap='stila_map'></div>",
-  "<video id='matteLipsVideo' style='' class='' src='https:/youtu.be/cKFNDc3iCKU'   controls ></video>",
+  "<video id='matteLipsVideo' style='' class='' src='Images/stila.mp4'   controls ></video>",
   "<span id='matteBar' style='font-size:24px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Matte Lips</span>",
 
-    "<button id='matteBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2;   '><span id='matteBack_icon' class=''></span>Back<span id=matteBack_badge class=badge style=margin-left:1ch;></span></button>",
+    "<button id='matteBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='matteBack_icon' class=''></span>Back<span id=matteBack_badge class=badge style=margin-left:1ch;></span></button>",
   ].join('');
 </script>
 </div>
@@ -229,11 +232,11 @@ matteForm.innerHTML=[
 <script>
 colourPopForm.innerHTML=[
   "<div id='laxCP' data-nsb-type=image style='' class=''><img src='Images/lax.jpeg'  height=100% width=100% id='laxCP_img' usemap='laxCP_map'></div>",
-  "<div id='colourPopText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; ' >Ultra Matte Lip is truly ColourPop\'s signature product. This lightweight, longlasting formula can stand up to the test, whether it\'s looking good on a girls night out or chowing down on a well-deserved breakfast burrito! And the best part, it\'s only $6. We rate this product P for Perf!</div>",
-  "<div id='colourPopText2' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; ' >Pictured Shade: LAX</div>",
+  "<div id='colourPopText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Ultra Matte Lip is truly ColourPop\'s signature product. \u000AThis lightweight, longlasting formula can stand up to the test, \u000Awhether it\'s looking good on a girls night out or chowing down \u000Aon a well-deserved breakfast burrito! And the best part, \u000Ait\'s only <a href= \" https://colourpop.com/collections/ultra-matte-lip/products/lax \" target= \u201C_blank\u201D>$6</a>. \u000AWe rate this product P for Perf!</div>",
+  "<div id='colourPopText2' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pictured Shade: LAX</div>",
   "<span id='colourPopBar' style='font-size:24px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Colour Pop</span>",
 
-    "<button id='colourPopBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2;   '><span id='colourPopBack_icon' class=''></span>Back<span id=colourPopBack_badge class=badge style=margin-left:1ch;></span></button>",
+    "<button id='colourPopBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='colourPopBack_icon' class=''></span>Back<span id=colourPopBack_badge class=badge style=margin-left:1ch;></span></button>",
   ].join('');
 </script>
 </div>
@@ -241,12 +244,12 @@ colourPopForm.innerHTML=[
 <div id="stilaForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
 <script>
 stilaForm.innerHTML=[
-  "<div id='stilaText2' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; ' >Pictured Shade: Patina(Dusty Rose)</div>",
+  "<div id='stilaText2' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pictured Shade: Patina(Dusty Rose)</div>",
   "<div id='stilaPatina' data-nsb-type=image style='' class=''><img src='Images/stilaPatina.jpg'  height=100% width=100% id='stilaPatina_img' usemap='stilaPatina_map'></div>",
-  "<div id='stilaText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; ' >Stay All day is one of our favorites here at BrownBabe. This creamy, lightweight formula looks effortlessly stellar. It comes in a bunch of fabulous colors, but our personal favorite is Patina. This product is $24 and gets really great reviews from its users. It would certainly earn a P for Perf if it weren\'t for that pesky price tag, but today it gets a B for Bomb! Because this splurge item is definitely worth it.</div>",
+  "<div id='stilaText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Stay All day is one of our favorites here at BrownBabe. This creamy, lightweight formula looks effortlessly stellar. It comes in a bunch of fabulous colors, but our personal favorite is Patina. This product is $24 and gets really great reviews from its users. It would certainly earn a P for Perf if it weren\'t for that pesky price tag, but today it gets a B for Bomb! Because this splurge item is definitely worth it.</div>",
   "<span id='stilaBar' style='font-size:24px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Stila</span>",
 
-    "<button id='stilaBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2;   '><span id='stilaBack_icon' class=''></span>Back<span id=stilaBack_badge class=badge style=margin-left:1ch;></span></button>",
+    "<button id='stilaBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='stilaBack_icon' class=''></span>Back<span id=stilaBack_badge class=badge style=margin-left:1ch;></span></button>",
   ].join('');
 </script>
 </div>
@@ -255,13 +258,13 @@ stilaForm.innerHTML=[
 <div id="creamForm" class="nsb-form" style="position:absolute; display:none; height:100vh; background-color:#f2f2f2; top:0px; left:0px; width:100%; ">
 <script>
 creamForm.innerHTML=[
-  "<div id='creamText' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; ' >Cream lipsticks have a distinctly, well, creamy look to them on your lips. They typically aren\'t very shimmery, but they may have a bit of shine depending on the product.  They tend to be a hydrating alternative to matte finishes and a more casual alternative to glossy finishes.</div>",
-  "<div id='creamProTipBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; ' >Pro Tip: Satin finishes are a happy medium between cream and matte. Hydrating, but less glossy!</div>",
-  "<div id='matteHeaderCopy' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Ebrima; font-style:italic; font-weight:500; background-color:lightgray;  ' >","<div id=matteHeaderCopy_addChild>",,"</div>","Brands to Try</div>",
+  "<div id='creamText' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Cream lipsticks have a distinctly, well, creamy look to them on your lips. They typically aren\'t very shimmery, but they may have a bit of shine depending on the product.  They tend to be a hydrating alternative to matte finishes and a more casual alternative to glossy finishes.</div>",
+  "<div id='creamProTipBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pro Tip: Satin finishes are a happy medium between cream and matte. Hydrating, but less glossy!</div>",
+  "<div id='matteHeaderCopy' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Ebrima; font-style:italic; font-weight:500; background-color:lightgray;  '>","<div id=matteHeaderCopy_addChild>",,"</div>","Brands to Try</div>",
   "<div id='burtsLogo' data-nsb-type=image style='' class=''><img src='Images/BurtsBees.png'  height=100% width=100% id='burtsLogo_img' usemap='burtsLogo_map'></div>",
   "<span id='creamBar' style='font-size:24px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Cream Lips</span>",
 
-    "<button id='creamBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2;   '><span id='creamBack_icon' class=''></span>Back<span id=creamBack_badge class=badge style=margin-left:1ch;></span></button>",
+    "<button id='creamBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='creamBack_icon' class=''></span>Back<span id=creamBack_badge class=badge style=margin-left:1ch;></span></button>",
   ].join('');
 </script>
 </div>
@@ -271,27 +274,32 @@ creamForm.innerHTML=[
 <script>
 burtsForm.innerHTML=[
   "<div id='burtsBerries' data-nsb-type=image style='' class=''><img src='Images/burtsBerries.jpg'  height=100% width=100% id='burtsBerries_img' usemap='burtsBerries_map'></div>",
-  "<div id='burtsBerriesText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; ' >Burt\'s Bees carries 18 shades of this satin finish lipstick. Each shade offers up to 8 hours of color, coverage, and hydration. This $9 steal is a 100% natural product made with recycled packaging. Did we say beautiful, green, and cheap?! You bet, this product gets a P for Perf from us!</div>",
+  "<div id='burtsBerriesText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Burt\'s Bees carries 18 shades of this satin finish lipstick. Each shade offers up to 8 hours of color, coverage, and hydration. This $9 steal is a 100% natural product made with recycled packaging. Did we say beautiful, green, and cheap?! You bet, this product gets a P for Perf from us!</div>",
   "<span id='burtsBar' style='font-size:24px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Burt's Bees</span>",
 
-    "<button id='burtsBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2;   '><span id='burtsBack_icon' class=''></span>Back<span id=burtsBack_badge class=badge style=margin-left:1ch;></span></button>",
+    "<button id='burtsBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='burtsBack_icon' class=''></span>Back<span id=burtsBack_badge class=badge style=margin-left:1ch;></span></button>",
   ].join('');
 </script>
 </div>
 <a name='/FoundationForm' data-role=none></a>
+<div id=FoundationForm_scroller>
 <div id="FoundationForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
 <script>
 FoundationForm.innerHTML=[
   "<span id='FoundationBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>Foundation</span>",
 
-    "<button id='foundBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2;   '><span id='foundBack_icon' class=''></span>Back<span id=foundBack_badge class=badge style=margin-left:1ch;></span></button>",
-  "<div id='foundTextBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; ' >Foundation is a great way to even out your complexion and add radiance to your skin. While it has traditionally been difficult to find flattering foundation shades for darker skin tones, more and more companies are making an active effort to provide a wider range of shades. </div>",
-  "<div id='FoundProTipBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; ' >Pro Tip: Make sure to match your undertone with your foundation for best results. </div>",
-  "<div id='foundHeader' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Ebrima; font-weight:500; background-color:lightgray;  ' >","<div id=foundHeader_addChild>",,"</div>","Brands to Try</div>",
-  "<div id='blackUp' data-nsb-type=image style='' class=''><img src='Images/BlackUP.jpg'  height=100% width=100% id='blackUp_img' usemap='blackUp_map'></div>",
+    "<button id='foundBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='foundBack_icon' class=''></span>Back<span id=foundBack_badge class=badge style=margin-left:1ch;></span></button>",
+  "<div id='foundTextBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>Foundation is a great way to even out your complexion and \u000Aadd radiance to your skin. While it has traditionally been difficult \u000Ato find flattering foundation shades for darker skin tones, more \u000Acompanies are now making an effort to provide a wider range of shades. </div>",
+  "<div id='FoundProTipBox' class='' data-nsb-type=Label style='cursor:default; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pro Tip: Make sure to match your undertone with your foundation for best results. </div>",
+  "<div id='foundHeader' class='' data-nsb-type=Header style='cursor:default;text-align:center; text-shadow:none; font-size:20px; font-family:Ebrima; font-weight:500; background-color:lightgray;  '>","<div id=foundHeader_addChild>",,"</div>","Brands to Try</div>",
+  "<div id='blackUp1' data-nsb-type=image style='' class=''><img src='Images/BlackUP.jpg'  height=100% width=100% id='blackUp1_img' usemap='blackUp1_map'></div>",
   "<div id='clinique' data-nsb-type=image style='' class=''><img src='Images/CliniqueLogo.gif'  height=100% width=100% id='clinique_img' usemap='clinique_map'></div>",
+
+    "<button id='blackUp' data-role='none' class='btn btn-default btn-md ' style='background-color:transparent; border-width:0px; border-color:transparent; '><span id='blackUp_icon' class=''></span><span id=blackUp_badge class=badge style=margin-left:1ch;></span></button>",
+  "<video id='matteLipsVideoCopy' style='' class='' src='Images/blackup.mp4'   controls ></video>",
   ].join('');
 </script>
+</div>
 </div>
 <a name='/blackUpForm' data-role=none></a>
 <div id="blackUpForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
@@ -299,10 +307,10 @@ FoundationForm.innerHTML=[
 blackUpForm.innerHTML=[
   "<span id='blackUpBar' style='font-size:28px; font-family:Ebrima; font-weight:300; padding-top:12px; color:#f2f2f2; background-color:#842950; float:left;'  class='label label-default '>black|Up</span>",
 
-    "<button id='blackUpBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2;   '><span id='blackUpBack_icon' class=''></span>Back<span id=blackUpBack_badge class=badge style=margin-left:1ch;></span></button>",
+    "<button id='blackUpBack' data-role='none' class='btn btn-default btn-md ' style='font-family:Ebrima; background-color:#f2f2f2; '><span id='blackUpBack_icon' class=''></span>Back<span id=blackUpBack_badge class=badge style=margin-left:1ch;></span></button>",
   "<div id='blackUpFound' data-nsb-type=image style='' class=''><img src='Images/blackUpFound.jpg'  height=100% width=100% id='blackUpFound_img' usemap='blackUpFound_map'></div>",
-  "<div id='blackUpText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; ' >Stay All day is one of our favorites here at BrownBabe. This creamy, lightweight formula looks effortlessly stellar. It comes in a bunch of fabulous colors, but our personal favorite is Patina. This product is $24 and gets really great reviews from its users. It would certainly earn a P for Perf if it weren\'t for that pesky price tag, but today it gets a B for Bomb! Because this splurge item is definitely worth it.</div>",
-  "<div id='blackUpText2' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; ' >Pictured Shade: HC12</div>",
+  "<div id='blackUpText' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; padding-left:3%; padding-right:3%; font-size:14px; font-family:Ebrima; font-weight:500; '>This cream foundation slides on like a dream, and \u000Ait is one of our favorites \u2013 it boasts of 15 different shades. \u000AAs advertised, it offers great coverage and concealer might not be needed \u000Aif you don\u2019t happen to have dark spots. Users rave about this product, \u000Abut because of the hefty price tag \u000A(<a href= \"http://www.blackupcosmetics.com/foundation/85-full-coverage-cream-foundation.html\" target= \u201C_blank\u201D>$43.50</a>), \u000Awe have to give this product a B for bomb. </div>",
+  "<div id='blackUpText2' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:14px; font-family:Ebrima; font-style:italic; font-weight:500; '>Pictured Shade: HC12</div>",
   ].join('');
 </script>
 </div>
@@ -310,7 +318,7 @@ blackUpForm.innerHTML=[
 <div id="cliniqueForm" class="nsb-form" style="position:absolute; display:none; height:100vh; top:0px; left:0px; width:100%; ">
 <script>
 cliniqueForm.innerHTML=[
-
+  "<video id='Video1' style='' class='' src=''    ></video>",
   ].join('');
 </script>
 </div>
@@ -376,6 +384,9 @@ window.addEventListener('load', function() {
   NSB.bs.addProperties(skinBack, 'Button_bs');
   skinForm.style.display = 'none';
   $('#skinForm').on($.jqmodal.CLOSE, skinForm.onhide);
+  skinForm.style.position='relative';
+  skinForm.style.left='auto';
+  skinForm.style.top='auto';
 }, false);
 
 // ***** Code for form: eyesForm *****
@@ -512,6 +523,9 @@ window.addEventListener('load', function() {
 // ***** Code for form: FoundationForm *****
 window.addEventListener('load', function() {
   FoundationForm.style.display = 'block';
+  FoundationForm_ref = new IScroll(FoundationForm_scroller,{ mouseWheel:true, scrollbars:true, bounce:true, zoom:false,click:iScrollClick()});
+  FoundationForm.ref = FoundationForm_ref;
+  FoundationForm.scroller = FoundationForm_scroller;
   NSB.addProperties(FoundationForm);
   NSB.bs.addProperties(FoundationBar, 'Label_bs');
   NSB.bs.addProperties(foundBack, 'Button_bs');
@@ -524,8 +538,11 @@ window.addEventListener('load', function() {
   NSB.addProperties.addChild(foundHeader);
   NSB.addProperties(foundHeader);
 
-  NSB.addProperties(blackUp);
+  NSB.addProperties(blackUp1);
   NSB.addProperties(clinique);
+  NSB.bs.addProperties(blackUp, 'Button_bs');
+  blackUp.onclick=function(){ChangeForm(blackUpForm)};
+  NSB.addProperties(matteLipsVideoCopy);
   FoundationForm.style.display = 'none';
 }, false);
 
@@ -548,7 +565,7 @@ window.addEventListener('load', function() {
 window.addEventListener('load', function() {
   cliniqueForm.style.display = 'block';
   NSB.addProperties(cliniqueForm);
-
+  NSB.addProperties(Video1);
   cliniqueForm.style.display = 'none';
 }, false);
 

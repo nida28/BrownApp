@@ -281,13 +281,13 @@
               "_uuid": "f644dfc0175c4549a87fe7a0680ef24a", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "Lips.onclick", 
               "location": [
                 1, 
                 2
               ], 
               "signature": "Lips.onclick()", 
-              "id": "Lips.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -296,13 +296,13 @@
               "_uuid": "9f809b37d5f44b4b9ccdec109c6a4f2c", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "Skin.onclick", 
               "location": [
                 5, 
                 6
               ], 
               "signature": "Skin.onclick()", 
-              "id": "Skin.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -311,13 +311,13 @@
               "_uuid": "87b2e9bcacd34a4d9e828e6dfd30ca21", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "Eyes.onclick", 
               "location": [
                 9, 
                 10
               ], 
               "signature": "Eyes.onclick()", 
-              "id": "Eyes.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -326,13 +326,13 @@
               "_uuid": "ec8cefba1e3241bd91f34712cebd508d", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "Cheeks.onclick", 
               "location": [
                 13, 
                 14
               ], 
               "signature": "Cheeks.onclick()", 
-              "id": "Cheeks.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -341,13 +341,13 @@
               "_uuid": "e3bb831206af49f8b54f63a590a8a491", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "Environmental.onclick", 
               "location": [
                 17, 
                 18
               ], 
               "signature": "Environmental.onclick()", 
-              "id": "Environmental.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -356,13 +356,13 @@
               "_uuid": "bb57769b59cb4878add7cd3e28d7b119", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "Label1.onmousemove", 
               "location": [
                 23, 
                 24
               ], 
               "signature": "Label1.onmousemove()", 
-              "id": "Label1.onmousemove"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -377,7 +377,7 @@
           "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
           "cached_js": "", 
           "language": "Other", 
-          "script": "\ufffd\ufffd\ufffd\ufffd\u0007\ufffdExif", 
+          "script": "Binary content.  Do not edit.", 
           "_functions": [], 
           "_uuid": "5df6e70337604a19ad11c5b9365dd8e5", 
           "!type": "Code", 
@@ -735,13 +735,13 @@
               "_uuid": "9f333d81f6114715a604ec2e0cd47304", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "lipsBack.onclick", 
               "location": [
                 1, 
                 2
               ], 
               "signature": "lipsBack.onclick()", 
-              "id": "lipsBack.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -750,13 +750,13 @@
               "_uuid": "87ceb296a8cc41f6a644760806773c32", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "matteLabel.onclick", 
               "location": [
                 5, 
                 6
               ], 
               "signature": "matteLabel.onclick()", 
-              "id": "matteLabel.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -765,13 +765,13 @@
               "_uuid": "fe3c451e1534434b9b18ecbd78f20600", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "creamLabel.onclick", 
               "location": [
                 9, 
                 10
               ], 
               "signature": "creamLabel.onclick()", 
-              "id": "creamLabel.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -1079,13 +1079,13 @@
               "_uuid": "37e718bb57b94bd3a17fc612b737e820", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "skinBack.onclick", 
               "location": [
                 1, 
                 2
               ], 
               "signature": "skinBack.onclick()", 
-              "id": "skinBack.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -1094,13 +1094,13 @@
               "_uuid": "b6e5136bfd464549807f5a90f86052bc", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "foundationLabel.onclick", 
               "location": [
                 5, 
                 6
               ], 
               "signature": "foundationLabel.onclick()", 
-              "id": "foundationLabel.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -1411,13 +1411,13 @@
               "_uuid": "a7e332a5d2d5448e975455d375a98ab6", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "eyesBack.onclick", 
               "location": [
                 0, 
                 1
               ], 
               "signature": "eyesBack.onclick()", 
-              "id": "eyesBack.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -1725,13 +1725,13 @@
               "_uuid": "2a5a651d43be4025b3119eb8fc9b43c4", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "cheeksBack.onclick", 
               "location": [
                 0, 
                 1
               ], 
               "signature": "cheeksBack.onclick()", 
-              "id": "cheeksBack.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -1989,13 +1989,13 @@
               "_uuid": "b6fccfdcc1e946bb894953e353ab4ab0", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "envBack.onclick", 
               "location": [
                 0, 
                 1
               ], 
               "signature": "envBack.onclick()", 
-              "id": "envBack.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -2004,13 +2004,13 @@
               "_uuid": "4f2b2ea07ab745e8851bd0f4ef8cbff3", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "burtsLabel.onclick", 
               "location": [
                 4, 
                 5
               ], 
               "signature": "burtsLabel.onclick()", 
-              "id": "burtsLabel.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -2284,7 +2284,7 @@
               "_uuid": "ed6bc0feeb2f410f878225c770783fd8", 
               "onmousedown": "", 
               "class": "", 
-              "src": "https:/youtu.be/cKFNDc3iCKU", 
+              "src": "Images/stila.mp4", 
               "ontouchmove": "", 
               "script": "", 
               "children": [], 
@@ -2410,61 +2410,61 @@
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "cached_js": "", 
               "script": "", 
-              "_uuid": "fa8ccb34830641e1adf04cd3d33e845a", 
+              "_uuid": "ce603e2902e54a74bdc27b04469f9e45", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "matteBack.onclick", 
+              "children": [], 
               "location": [
                 1, 
                 2
               ], 
               "signature": "matteBack.onclick()", 
-              "children": []
+              "id": "matteBack.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "cached_js": "", 
               "script": "", 
-              "_uuid": "28693330683b4918a1a8483da86d07ed", 
+              "_uuid": "d2aab1a81f3c45f9819621f1144ae4cb", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "colourPop.onclick", 
+              "children": [], 
               "location": [
                 5, 
                 6
               ], 
               "signature": "colourPop.onclick()", 
-              "children": []
+              "id": "colourPop.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "cached_js": "", 
               "script": "", 
-              "_uuid": "abc18f05d0b144719ec8f06d2cf8741e", 
+              "_uuid": "4e8acf07f199427e9cb9abd44d364fd4", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "stila.onclick", 
+              "children": [], 
               "location": [
                 9, 
                 10
               ], 
               "signature": "stila.onclick()", 
-              "children": []
+              "id": "stila.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "cached_js": "", 
               "script": "", 
-              "_uuid": "79de5f53fc4f4f50a6741eb16fce8639", 
+              "_uuid": "7892e41a51954857a0521c6074624d26", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "PlayButton.onclick", 
+              "children": [], 
               "location": [
                 13, 
                 14
               ], 
               "signature": "PlayButton.onclick()", 
-              "children": []
+              "id": "PlayButton.onclick"
             }
           ], 
           "designHeight": 0, 
@@ -2545,7 +2545,7 @@
               "onmousedown": "", 
               "cached_js": "", 
               "color": "", 
-              "text": "Ultra Matte Lip is truly ColourPop's signature product. This lightweight, longlasting formula can stand up to the test, whether it's looking good on a girls night out or chowing down on a well-deserved breakfast burrito! And the best part, it's only $6. We rate this product P for Perf!", 
+              "text": "Ultra Matte Lip is truly ColourPop's signature product. \nThis lightweight, longlasting formula can stand up to the test, \nwhether it's looking good on a girls night out or chowing down \non a well-deserved breakfast burrito! And the best part, \nit's only <a href= \" https://colourpop.com/collections/ultra-matte-lip/products/lax \" target= \u201c_blank\u201d>$6</a>. \nWe rate this product P for Perf!", 
               "height": 131, 
               "fontFamily": "Ebrima", 
               "mRight": "", 
@@ -2750,7 +2750,7 @@
               "grouping": ""
             }
           ], 
-          "expanded_pmp": false, 
+          "expanded_pmp": true, 
           "_functions": [
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -2759,13 +2759,13 @@
               "_uuid": "df796a70fb304cb4abe97f827b254e8f", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "colourPopBack.onclick", 
               "location": [
                 1, 
                 2
               ], 
               "signature": "colourPopBack.onclick()", 
-              "id": "colourPopBack.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -3060,13 +3060,13 @@
               "_uuid": "c0fd6a03356a4ba0931d29c8cabdd351", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "stilaBack.onclick", 
               "location": [
                 1, 
                 2
               ], 
               "signature": "stilaBack.onclick()", 
-              "id": "stilaBack.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -3400,13 +3400,13 @@
               "_uuid": "7f3fd6c1779b4b92abc33983a8b57996", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "creamBack.onclick", 
               "location": [
                 0, 
                 1
               ], 
               "signature": "creamBack.onclick()", 
-              "id": "creamBack.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -3415,13 +3415,13 @@
               "_uuid": "e8a2deb9a2a646e68e5ab07d84636973", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "burtsLogo.onclick", 
               "location": [
                 4, 
                 5
               ], 
               "signature": "burtsLogo.onclick()", 
-              "id": "burtsLogo.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -3666,13 +3666,13 @@
               "_uuid": "781130791efd4da190cc9093ac87fab6", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "burtsBack.onclick", 
               "location": [
                 1, 
                 2
               ], 
               "signature": "burtsBack.onclick()", 
-              "id": "burtsBack.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -3703,7 +3703,7 @@
           "backgroundimage": "", 
           "background": "", 
           "height": 460, 
-          "scrolling": "false", 
+          "scrolling": "true", 
           "setFocusID": "", 
           "openMode": "none", 
           "locked": false, 
@@ -3825,7 +3825,7 @@
               "onmousedown": "", 
               "cached_js": "", 
               "color": "", 
-              "text": "Foundation is a great way to even out your complexion and add radiance to your skin. While it has traditionally been difficult to find flattering foundation shades for darker skin tones, more and more companies are making an active effort to provide a wider range of shades. ", 
+              "text": "Foundation is a great way to even out your complexion and \nadd radiance to your skin. While it has traditionally been difficult \nto find flattering foundation shades for darker skin tones, more \ncompanies are now making an effort to provide a wider range of shades. ", 
               "height": 124, 
               "fontFamily": "Ebrima", 
               "mRight": "", 
@@ -3886,7 +3886,7 @@
               "style": "", 
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "script": "", 
-              "top": 198, 
+              "top": 183, 
               "!type": "Label", 
               "pLeft": "3%", 
               "pTop": "", 
@@ -3932,7 +3932,7 @@
               "style": "", 
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "bottom": "auto", 
-              "top": 269, 
+              "top": 349, 
               "!type": "Header", 
               "onresize": "", 
               "width": "100%", 
@@ -3963,12 +3963,12 @@
               "right": "auto", 
               "cached_js": "", 
               "onmousedown": "", 
-              "id": "blackUp", 
+              "id": "blackUp1", 
               "borderColor": "", 
               "style": "", 
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "bottom": "auto", 
-              "top": 347, 
+              "top": 436, 
               "!type": "Image", 
               "onresize": "", 
               "mRight": "", 
@@ -3994,7 +3994,7 @@
               "borderStyle": "", 
               "ontouchstart": "", 
               "width": 143, 
-              "left": 19
+              "left": 14
             }, 
             {
               "right": "auto", 
@@ -4005,7 +4005,7 @@
               "style": "", 
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "bottom": "auto", 
-              "top": 339, 
+              "top": 397, 
               "!type": "Image", 
               "onresize": "", 
               "mRight": "", 
@@ -4031,7 +4031,101 @@
               "borderStyle": "", 
               "ontouchstart": "", 
               "width": "90", 
-              "left": 194
+              "left": 189
+            }, 
+            {
+              "right": "auto", 
+              "onmousedown": "", 
+              "cached_js": "", 
+              "color": "", 
+              "blockLevel": "", 
+              "height": 48, 
+              "disabled": "", 
+              "fontFamily": "", 
+              "popBody": "Body", 
+              "groupStyle": "", 
+              "popClose": "hover", 
+              "onresize": "", 
+              "children": [], 
+              "size": " btn-md", 
+              "borderColor": "transparent", 
+              "ChangeForm": "blackUpForm", 
+              "style": "", 
+              "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
+              "script": "", 
+              "pTop": "", 
+              "top": 436, 
+              "!type": "Button_bs", 
+              "popTitle": "Title", 
+              "pLeft": "", 
+              "id": "blackUp", 
+              "width": 142, 
+              "onmousemove": "", 
+              "onmouseup": "", 
+              "mRight": "", 
+              "fontSize": "", 
+              "hidden": "", 
+              "icon": "", 
+              "badge": "", 
+              "borderWidth": "0", 
+              "onclick": "", 
+              "onmouseout": "", 
+              "_uuid": "96bb6a2bbdaa4402a1a69b0a800036dd", 
+              "mTop": "", 
+              "mBottom": "", 
+              "fontWeight": "", 
+              "mAll": "", 
+              "mLeft": "", 
+              "class": "", 
+              "backgroundColor": "transparent", 
+              "popStyle": "popover", 
+              "ontouchend": "", 
+              "fontStyle": "", 
+              "popPosition": "", 
+              "ontouchmove": "", 
+              "bottom": "auto", 
+              "appearance": " btn-default", 
+              "expanded_pmp": true, 
+              "value": "", 
+              "pRight": "", 
+              "pAll": "", 
+              "pBottom": "", 
+              "borderStyle": "", 
+              "left": 16, 
+              "ontouchstart": "", 
+              "grouping": ""
+            }, 
+            {
+              "right": "auto", 
+              "cached_js": "", 
+              "height": 106, 
+              "id": "matteLipsVideoCopy", 
+              "style": "", 
+              "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
+              "bottom": "auto", 
+              "top": 232, 
+              "!type": "Video", 
+              "controls": "controls", 
+              "onresize": "", 
+              "width": 225, 
+              "onmousemove": "", 
+              "onmouseup": "", 
+              "hidden": "", 
+              "onclick": "", 
+              "onmouseout": "", 
+              "ontouchend": "", 
+              "_uuid": "ed6bc0feeb2f410f878225c770783fd8", 
+              "onmousedown": "", 
+              "class": "", 
+              "src": "Images/blackup.mp4", 
+              "ontouchmove": "", 
+              "script": "", 
+              "children": [], 
+              "expanded_pmp": true, 
+              "left": 45, 
+              "ontouchstart": "", 
+              "loop": "", 
+              "autoplay": ""
             }
           ], 
           "expanded_pmp": true, 
@@ -4043,13 +4137,13 @@
               "_uuid": "039ffc336c6049fab8b5110524ba4cc3", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "foundBack.onclick", 
               "location": [
                 4, 
                 5
               ], 
               "signature": "foundBack.onclick()", 
-              "id": "foundBack.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -4058,13 +4152,13 @@
               "_uuid": "da8d69a160e2426eb1e94230528cb697", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "clinique.onclick", 
               "location": [
                 9, 
                 10
               ], 
               "signature": "clinique.onclick()", 
-              "id": "clinique.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -4254,7 +4348,7 @@
               "onmousedown": "", 
               "cached_js": "", 
               "color": "", 
-              "text": "Stay All day is one of our favorites here at BrownBabe. This creamy, lightweight formula looks effortlessly stellar. It comes in a bunch of fabulous colors, but our personal favorite is Patina. This product is $24 and gets really great reviews from its users. It would certainly earn a P for Perf if it weren't for that pesky price tag, but today it gets a B for Bomb! Because this splurge item is definitely worth it.", 
+              "text": "This cream foundation slides on like a dream, and \nit is one of our favorites \u2013 it boasts of 15 different shades. \nAs advertised, it offers great coverage and concealer might not be needed \nif you don\u2019t happen to have dark spots. Users rave about this product, \nbut because of the hefty price tag \n(<a href= \"http://www.blackupcosmetics.com/foundation/85-full-coverage-cream-foundation.html\" target= \u201c_blank\u201d>$43.50</a>), \nwe have to give this product a B for bomb. ", 
               "height": 188, 
               "fontFamily": "Ebrima", 
               "mRight": "", 
@@ -4359,13 +4453,13 @@
               "_uuid": "315fada5981344698844d9fb78b14abd", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "blackUpBack.onclick", 
               "location": [
                 0, 
                 1
               ], 
               "signature": "blackUpBack.onclick()", 
-              "id": "blackUpBack.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -4403,7 +4497,40 @@
           "language": "BASIC", 
           "onshow": "", 
           "parentForm": "", 
-          "children": [], 
+          "children": [
+            {
+              "right": "auto", 
+              "cached_js": "", 
+              "height": 66, 
+              "id": "Video1", 
+              "style": "", 
+              "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
+              "bottom": "auto", 
+              "top": 129, 
+              "!type": "Video", 
+              "controls": "", 
+              "onresize": "", 
+              "width": 100, 
+              "onmousemove": "", 
+              "onmouseup": "", 
+              "hidden": "", 
+              "onclick": "", 
+              "onmouseout": "", 
+              "ontouchend": "", 
+              "_uuid": "e6e571f839b54c8980daf6f6414cb2b1", 
+              "onmousedown": "", 
+              "class": "", 
+              "src": "", 
+              "ontouchmove": "", 
+              "script": "", 
+              "children": [], 
+              "expanded_pmp": true, 
+              "left": 115, 
+              "ontouchstart": "", 
+              "loop": "", 
+              "autoplay": ""
+            }
+          ], 
           "expanded_pmp": true, 
           "designHeight": 0, 
           "borderWidth": "", 
@@ -4491,7 +4618,7 @@
   "_old_pal": false, 
   "deploy_port": "21", 
   "deploy_password": "", 
-  "_tempdir": "c:\\users\\-\\appdata\\local\\temp\\tmpr0xeuq", 
+  "_tempdir": "c:\\users\\-\\appdata\\local\\temp\\tmpqxfsb9", 
   "deploy_localPath": "", 
   "deploy_path": "", 
   "cache_dirty": true, 
@@ -4508,7 +4635,7 @@
   "filename": "", 
   "libraries": [], 
   "_sample": false, 
-  "version": 6, 
+  "version": 7, 
   "deploy_local": false, 
   "language_version": 8
 }
