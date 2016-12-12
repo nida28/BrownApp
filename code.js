@@ -137,19 +137,6 @@ mufeBack.onclick=function(){
 abhBack.onclick=function(){
   ChangeForm(FoundationForm);
 }
-eyesBack.onclick=function(){
-  ChangeForm(homeForm);
-}
-cheeksBack.onclick=function(){
-  ChangeForm(homeForm);
-}
-envBack.onclick=function(){
-  ChangeForm(homeForm);
-}
-
-burtsLabel.onclick=function(){
-  ChangeForm(burtsForm);
-}
 bbCCVideo.onresize=function(){
   
 }
@@ -164,4 +151,47 @@ marcelle.onclick=function(){
 
 iman.onclick=function(){
   ChangeForm(imanForm);
+}
+marcelleBack.onclick=function(){
+  ChangeForm(bbCCForm);
+}
+eyesBack.onclick=function(){
+  ChangeForm(homeForm);
+}
+
+eyelinerLabel.onclick=function(){
+  ChangeForm(eyelinerForm);
+}
+
+mascaraLabel.onclick=function(){
+  ChangeForm(mascaraForm);
+}
+
+shadowLabel.onclick=function(){
+  ChangeForm(shadowForm);
+}
+eyelinerBack.onclick=function(){
+  ChangeForm(eyesForm);
+}
+
+eyelinerLabel.onclick=function(){
+  ChangeForm(eyelinerForm);
+}
+
+mascaraLabel.onclick=function(){
+  ChangeForm(mascaraForm);
+}
+
+shadowLabel.onclick=function(){
+  ChangeForm(shadowForm);
+}
+cheeksBack.onclick=function(){
+  ChangeForm(homeForm);
+}
+envBack.onclick=function(){
+  ChangeForm(homeForm);
+}
+
+burtsLabel.onclick=function(){
+  ChangeForm(burtsForm);
 }
