@@ -281,13 +281,13 @@
               "_uuid": "f644dfc0175c4549a87fe7a0680ef24a", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "Lips.onclick", 
+              "children": [], 
               "location": [
                 1, 
                 2
               ], 
               "signature": "Lips.onclick()", 
-              "children": []
+              "id": "Lips.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -296,13 +296,13 @@
               "_uuid": "9f809b37d5f44b4b9ccdec109c6a4f2c", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "Skin.onclick", 
+              "children": [], 
               "location": [
                 5, 
                 6
               ], 
               "signature": "Skin.onclick()", 
-              "children": []
+              "id": "Skin.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -311,13 +311,13 @@
               "_uuid": "87b2e9bcacd34a4d9e828e6dfd30ca21", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "Eyes.onclick", 
+              "children": [], 
               "location": [
                 9, 
                 10
               ], 
               "signature": "Eyes.onclick()", 
-              "children": []
+              "id": "Eyes.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -326,13 +326,13 @@
               "_uuid": "ec8cefba1e3241bd91f34712cebd508d", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "Cheeks.onclick", 
+              "children": [], 
               "location": [
                 13, 
                 14
               ], 
               "signature": "Cheeks.onclick()", 
-              "children": []
+              "id": "Cheeks.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -341,13 +341,13 @@
               "_uuid": "e3bb831206af49f8b54f63a590a8a491", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "Environmental.onclick", 
+              "children": [], 
               "location": [
                 17, 
                 18
               ], 
               "signature": "Environmental.onclick()", 
-              "children": []
+              "id": "Environmental.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -356,13 +356,13 @@
               "_uuid": "bb57769b59cb4878add7cd3e28d7b119", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "Label1.onmousemove", 
+              "children": [], 
               "location": [
                 23, 
                 24
               ], 
               "signature": "Label1.onmousemove()", 
-              "children": []
+              "id": "Label1.onmousemove"
             }
           ], 
           "designHeight": 0, 
@@ -735,13 +735,13 @@
               "_uuid": "9f333d81f6114715a604ec2e0cd47304", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "lipsBack.onclick", 
+              "children": [], 
               "location": [
                 1, 
                 2
               ], 
               "signature": "lipsBack.onclick()", 
-              "children": []
+              "id": "lipsBack.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -750,13 +750,13 @@
               "_uuid": "87ceb296a8cc41f6a644760806773c32", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "matteLabel.onclick", 
+              "children": [], 
               "location": [
                 5, 
                 6
               ], 
               "signature": "matteLabel.onclick()", 
-              "children": []
+              "id": "matteLabel.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -765,13 +765,13 @@
               "_uuid": "fe3c451e1534434b9b18ecbd78f20600", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "creamLabel.onclick", 
+              "children": [], 
               "location": [
                 9, 
                 10
               ], 
               "signature": "creamLabel.onclick()", 
-              "children": []
+              "id": "creamLabel.onclick"
             }
           ], 
           "designHeight": 0, 
@@ -1079,13 +1079,13 @@
               "_uuid": "37e718bb57b94bd3a17fc612b737e820", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "skinBack.onclick", 
+              "children": [], 
               "location": [
                 1, 
                 2
               ], 
               "signature": "skinBack.onclick()", 
-              "children": []
+              "id": "skinBack.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -1094,13 +1094,13 @@
               "_uuid": "b6e5136bfd464549807f5a90f86052bc", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "foundationLabel.onclick", 
+              "children": [], 
               "location": [
                 5, 
                 6
               ], 
               "signature": "foundationLabel.onclick()", 
-              "children": []
+              "id": "foundationLabel.onclick"
             }
           ], 
           "designHeight": 0, 
@@ -1411,13 +1411,13 @@
               "_uuid": "a7e332a5d2d5448e975455d375a98ab6", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "eyesBack.onclick", 
+              "children": [], 
               "location": [
                 0, 
                 1
               ], 
               "signature": "eyesBack.onclick()", 
-              "children": []
+              "id": "eyesBack.onclick"
             }
           ], 
           "designHeight": 0, 
@@ -1725,13 +1725,13 @@
               "_uuid": "2a5a651d43be4025b3119eb8fc9b43c4", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "cheeksBack.onclick", 
+              "children": [], 
               "location": [
                 0, 
                 1
               ], 
               "signature": "cheeksBack.onclick()", 
-              "children": []
+              "id": "cheeksBack.onclick"
             }
           ], 
           "designHeight": 0, 
@@ -1989,13 +1989,13 @@
               "_uuid": "b6fccfdcc1e946bb894953e353ab4ab0", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "envBack.onclick", 
+              "children": [], 
               "location": [
                 0, 
                 1
               ], 
               "signature": "envBack.onclick()", 
-              "children": []
+              "id": "envBack.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -2004,13 +2004,13 @@
               "_uuid": "4f2b2ea07ab745e8851bd0f4ef8cbff3", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "burtsLabel.onclick", 
+              "children": [], 
               "location": [
                 4, 
                 5
               ], 
               "signature": "burtsLabel.onclick()", 
-              "children": []
+              "id": "burtsLabel.onclick"
             }
           ], 
           "designHeight": 0, 
@@ -2413,13 +2413,13 @@
               "_uuid": "ce603e2902e54a74bdc27b04469f9e45", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "matteBack.onclick", 
               "location": [
                 1, 
                 2
               ], 
               "signature": "matteBack.onclick()", 
-              "id": "matteBack.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -2428,13 +2428,13 @@
               "_uuid": "d2aab1a81f3c45f9819621f1144ae4cb", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "colourPop.onclick", 
               "location": [
                 5, 
                 6
               ], 
               "signature": "colourPop.onclick()", 
-              "id": "colourPop.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -2443,13 +2443,13 @@
               "_uuid": "4e8acf07f199427e9cb9abd44d364fd4", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "stila.onclick", 
               "location": [
                 9, 
                 10
               ], 
               "signature": "stila.onclick()", 
-              "id": "stila.onclick"
+              "children": []
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -2458,13 +2458,13 @@
               "_uuid": "7892e41a51954857a0521c6074624d26", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "children": [], 
+              "id": "PlayButton.onclick", 
               "location": [
                 13, 
                 14
               ], 
               "signature": "PlayButton.onclick()", 
-              "id": "PlayButton.onclick"
+              "children": []
             }
           ], 
           "designHeight": 0, 
@@ -2759,13 +2759,13 @@
               "_uuid": "df796a70fb304cb4abe97f827b254e8f", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "colourPopBack.onclick", 
+              "children": [], 
               "location": [
                 1, 
                 2
               ], 
               "signature": "colourPopBack.onclick()", 
-              "children": []
+              "id": "colourPopBack.onclick"
             }
           ], 
           "designHeight": 0, 
@@ -3060,13 +3060,13 @@
               "_uuid": "c0fd6a03356a4ba0931d29c8cabdd351", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "stilaBack.onclick", 
+              "children": [], 
               "location": [
                 1, 
                 2
               ], 
               "signature": "stilaBack.onclick()", 
-              "children": []
+              "id": "stilaBack.onclick"
             }
           ], 
           "designHeight": 0, 
@@ -3400,13 +3400,13 @@
               "_uuid": "7f3fd6c1779b4b92abc33983a8b57996", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "creamBack.onclick", 
+              "children": [], 
               "location": [
                 0, 
                 1
               ], 
               "signature": "creamBack.onclick()", 
-              "children": []
+              "id": "creamBack.onclick"
             }, 
             {
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
@@ -3415,13 +3415,13 @@
               "_uuid": "e8a2deb9a2a646e68e5ab07d84636973", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "burtsLogo.onclick", 
+              "children": [], 
               "location": [
                 4, 
                 5
               ], 
               "signature": "burtsLogo.onclick()", 
-              "children": []
+              "id": "burtsLogo.onclick"
             }
           ], 
           "designHeight": 0, 
@@ -3666,13 +3666,13 @@
               "_uuid": "781130791efd4da190cc9093ac87fab6", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "burtsBack.onclick", 
+              "children": [], 
               "location": [
                 1, 
                 2
               ], 
               "signature": "burtsBack.onclick()", 
-              "children": []
+              "id": "burtsBack.onclick"
             }
           ], 
           "designHeight": 0, 
@@ -3691,7 +3691,7 @@
           "borderColor": "", 
           "style": "", 
           "cached_js_script_hash": "cb4d5cb6f96a10dba57e4ad713c840fd", 
-          "script": "blackUp.onclick= function(){\r\n  ChangeForm(blackUpForm);\r\n}\r\n\r\nfoundBack.onclick=function(){\r\n  ChangeForm(skinForm);\r\n}\r\n\r\n\r\nclinique.onclick = function(){\r\n  ChangeForm(cliniqueForm);\r\n}\r\n", 
+          "script": "blackUp1.onclick= function(){\r\n  ChangeForm(blackUpForm);\r\n}\r\n\r\nfoundBack.onclick=function(){\r\n  ChangeForm(skinForm);\r\n}\r\n\r\n\r\nminerals.onclick = function(){\r\n  ChangeForm(mineralsForm);\r\n}\r\n", 
           "top": 0, 
           "!type": "Form", 
           "onhide": "", 
@@ -3968,7 +3968,7 @@
               "style": "", 
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "bottom": "auto", 
-              "top": 436, 
+              "top": 413, 
               "!type": "Image", 
               "onresize": "", 
               "mRight": "", 
@@ -3994,18 +3994,18 @@
               "borderStyle": "", 
               "ontouchstart": "", 
               "width": 143, 
-              "left": 14
+              "left": 9
             }, 
             {
               "right": "auto", 
               "cached_js": "", 
               "onmousedown": "", 
-              "id": "clinique", 
+              "id": "minerals", 
               "borderColor": "", 
               "style": "", 
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "bottom": "auto", 
-              "top": 397, 
+              "top": 412, 
               "!type": "Image", 
               "onresize": "", 
               "mRight": "", 
@@ -4020,18 +4020,18 @@
               "mAll": "", 
               "mLeft": "", 
               "class": "", 
-              "src": "Images/CliniqueLogo.gif", 
+              "src": "Images/mineralsLogo.jpg", 
               "ontouchmove": "", 
               "script": "", 
               "children": [], 
               "expanded_pmp": true, 
-              "height": "90", 
+              "height": 52, 
               "borderWidth": "", 
               "mTop": "", 
               "borderStyle": "", 
               "ontouchstart": "", 
-              "width": "90", 
-              "left": 189
+              "width": 143, 
+              "left": 171
             }, 
             {
               "right": "auto", 
@@ -4134,7 +4134,7 @@
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "cached_js": "", 
               "script": "", 
-              "_uuid": "039ffc336c6049fab8b5110524ba4cc3", 
+              "_uuid": "f2f86759a87a44f7a4dfc487c8828fd3", 
               "!type": "Project", 
               "expanded_pmp": true, 
               "id": "foundBack.onclick", 
@@ -4149,15 +4149,15 @@
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "cached_js": "", 
               "script": "", 
-              "_uuid": "da8d69a160e2426eb1e94230528cb697", 
+              "_uuid": "c4c3ab3053754e07974a89c30d804e7f", 
               "!type": "Project", 
               "expanded_pmp": true, 
-              "id": "clinique.onclick", 
+              "id": "minerals.onclick", 
               "location": [
                 9, 
                 10
               ], 
-              "signature": "clinique.onclick()", 
+              "signature": "minerals.onclick()", 
               "children": []
             }
           ], 
@@ -4177,7 +4177,7 @@
           "borderColor": "", 
           "style": "", 
           "cached_js_script_hash": "2079bd0ca9ebfec9e787db72382c027f", 
-          "script": "blackUpBack.onclick = function(){\r\n  ChangeForm(FoundationForm);\r\n}", 
+          "script": "\nblackUpBack.onclick = function(){\r\n  ChangeForm(FoundationForm);\r\n}", 
           "top": 0, 
           "!type": "Form", 
           "onhide": "", 
@@ -4193,7 +4193,7 @@
           "setFocusID": "", 
           "openMode": "none", 
           "locked": false, 
-          "language": "BASIC", 
+          "language": "JavaScript", 
           "onshow": "", 
           "parentForm": "", 
           "children": [
@@ -4215,7 +4215,7 @@
               "!type": "Label_bs", 
               "pLeft": "", 
               "pTop": "12", 
-              "width": "320", 
+              "width": 324, 
               "onmousemove": "", 
               "onmouseup": "", 
               "fontSize": "28", 
@@ -4450,13 +4450,13 @@
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "cached_js": "", 
               "script": "", 
-              "_uuid": "315fada5981344698844d9fb78b14abd", 
+              "_uuid": "d5c078b5bc4c49df97d2d42239e0ca90", 
               "!type": "Project", 
               "expanded_pmp": true, 
               "id": "blackUpBack.onclick", 
               "location": [
-                0, 
-                1
+                1, 
+                2
               ], 
               "signature": "blackUpBack.onclick()", 
               "children": []
@@ -4471,14 +4471,14 @@
         }, 
         {
           "fullScreen": "true", 
-          "cached_js": "", 
+          "cached_js": "\nmineralsBack.onclick = function(){\n  ChangeForm(FoundationForm);\n}", 
           "designWidth": 0, 
           "scroll_options": "mouseWheel:true, scrollbars:true, bounce:true, zoom:false", 
-          "id": "cliniqueForm", 
+          "id": "mineralsForm", 
           "borderColor": "", 
           "style": "", 
-          "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
-          "script": "", 
+          "cached_js_script_hash": "72108d09609400c8ea59e584a164e835", 
+          "script": "\nmineralsBack.onclick = function(){\n  ChangeForm(FoundationForm);\n}", 
           "top": 0, 
           "!type": "Form", 
           "onhide": "", 
@@ -4494,44 +4494,275 @@
           "setFocusID": "", 
           "openMode": "none", 
           "locked": false, 
-          "language": "BASIC", 
+          "language": "JavaScript", 
           "onshow": "", 
           "parentForm": "", 
           "children": [
             {
               "right": "auto", 
+              "onmousedown": "", 
               "cached_js": "", 
-              "height": 66, 
-              "id": "Video1", 
+              "color": "#f2f2f2", 
+              "height": "50", 
+              "fontFamily": "Ebrima", 
+              "mRight": "", 
+              "id": "mineralsBar", 
+              "onresize": "", 
+              "children": [], 
+              "style": "float:left;", 
+              "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
+              "script": "", 
+              "top": 0, 
+              "!type": "Label_bs", 
+              "pLeft": "", 
+              "pTop": "12", 
+              "width": 324, 
+              "onmousemove": "", 
+              "onmouseup": "", 
+              "fontSize": "28", 
+              "hidden": "", 
+              "badge": "", 
+              "onclick": "", 
+              "onmouseout": "", 
+              "_uuid": "1413928b2e6d47418e3b7847ff21e5a1", 
+              "mTop": "", 
+              "mBottom": "", 
+              "fontWeight": "300", 
+              "mAll": "", 
+              "mLeft": "", 
+              "class": "", 
+              "backgroundColor": "#842950", 
+              "ontouchend": "", 
+              "fontStyle": "", 
+              "ontouchmove": "", 
+              "bottom": "auto", 
+              "appearance": " label-default", 
+              "expanded_pmp": true, 
+              "value": "Bare Minerals", 
+              "pRight": "", 
+              "pAll": "", 
+              "pBottom": "", 
+              "ontouchstart": "", 
+              "left": 0
+            }, 
+            {
+              "right": "auto", 
+              "onmousedown": "", 
+              "cached_js": "", 
+              "color": "", 
+              "blockLevel": "", 
+              "height": "auto", 
+              "disabled": " disabled", 
+              "fontFamily": "Ebrima", 
+              "popBody": "Body", 
+              "groupStyle": "", 
+              "popClose": "hover", 
+              "onresize": "", 
+              "children": [], 
+              "size": " btn-md", 
+              "borderColor": "", 
+              "ChangeForm": "FoundationForm", 
+              "style": "", 
+              "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
+              "script": "", 
+              "pTop": "", 
+              "top": 9, 
+              "!type": "Button_bs", 
+              "popTitle": "Title", 
+              "pLeft": "", 
+              "id": "mineralsBack", 
+              "width": "auto", 
+              "onmousemove": "", 
+              "onmouseup": "", 
+              "mRight": "", 
+              "fontSize": "", 
+              "hidden": "", 
+              "icon": "", 
+              "badge": "", 
+              "borderWidth": "", 
+              "onclick": "", 
+              "onmouseout": "", 
+              "_uuid": "353c319d10a14e14b95cb2ec361fe359", 
+              "mTop": "", 
+              "mBottom": "", 
+              "fontWeight": "", 
+              "mAll": "", 
+              "mLeft": "", 
+              "class": "", 
+              "backgroundColor": "#f2f2f2", 
+              "popStyle": "popover", 
+              "ontouchend": "", 
+              "fontStyle": "", 
+              "popPosition": "", 
+              "ontouchmove": "", 
+              "bottom": "auto", 
+              "appearance": " btn-default", 
+              "expanded_pmp": true, 
+              "value": "Back", 
+              "pRight": "", 
+              "pAll": "", 
+              "pBottom": "", 
+              "borderStyle": "", 
+              "left": 12, 
+              "ontouchstart": "", 
+              "grouping": ""
+            }, 
+            {
+              "right": "auto", 
+              "cached_js": "", 
+              "onmousedown": "", 
+              "id": "mineralsFound", 
+              "borderColor": "", 
               "style": "", 
               "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
               "bottom": "auto", 
-              "top": 129, 
-              "!type": "Video", 
-              "controls": "", 
+              "top": 71, 
+              "!type": "Image", 
               "onresize": "", 
-              "width": 100, 
+              "mRight": "", 
               "onmousemove": "", 
-              "onmouseup": "", 
-              "hidden": "", 
               "onclick": "", 
+              "hidden": "", 
+              "onmouseup": "", 
               "onmouseout": "", 
               "ontouchend": "", 
-              "_uuid": "e6e571f839b54c8980daf6f6414cb2b1", 
-              "onmousedown": "", 
+              "_uuid": "b2a3a3a4f482476d9207cac94f301a2d", 
+              "mBottom": "", 
+              "mAll": "", 
+              "mLeft": "", 
               "class": "", 
-              "src": "", 
+              "src": "Images/Warm Deep.jpeg", 
               "ontouchmove": "", 
               "script": "", 
               "children": [], 
               "expanded_pmp": true, 
-              "left": 115, 
+              "height": 140, 
+              "borderWidth": "", 
+              "mTop": "", 
+              "borderStyle": "", 
               "ontouchstart": "", 
-              "loop": "", 
-              "autoplay": ""
+              "width": 145, 
+              "left": 89
+            }, 
+            {
+              "right": "auto", 
+              "onmousedown": "", 
+              "cached_js": "", 
+              "color": "", 
+              "text": "This is Bare Minerals' Original Powder foundation. \nThis loose, mineral formula gives full coverage, \ndiminishes the appearance of imperfections, \nand does so without drying out your skin. It lasts for\nup to 8 hours, making you feel naturally flawless.\nBare Minerals' has varying foundations for your \nspecific skin concerns, but at only (<a href= \"https://www.bareescentuals.com/on/demandware.store/Sites-BareEscentuals-Site/en_US/Home-Show#ShadeFinder-Show\" target= \u201c_blank\u201d>$28.50</a>)\n we feel Original covers the basics. We rate \nthis P for Perf!\n", 
+              "height": 166, 
+              "fontFamily": "Ebrima", 
+              "mRight": "", 
+              "id": "mineralsText", 
+              "onresize": "", 
+              "children": [], 
+              "borderColor": "", 
+              "style": "", 
+              "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
+              "script": "", 
+              "top": 224, 
+              "!type": "Label", 
+              "pLeft": "3%", 
+              "pTop": "", 
+              "width": 323, 
+              "onmousemove": "", 
+              "onmouseup": "", 
+              "fontSize": "14", 
+              "hidden": "", 
+              "borderWidth": "", 
+              "onclick": "", 
+              "onmouseout": "", 
+              "_uuid": "818bf8a7f6514f059f5fe46ae693b1b0", 
+              "mTop": "", 
+              "mBottom": "", 
+              "fontWeight": "500", 
+              "mAll": "", 
+              "mLeft": "", 
+              "class": "", 
+              "backgroundColor": "", 
+              "ontouchend": "", 
+              "fontStyle": "", 
+              "ontouchmove": "", 
+              "align": "center", 
+              "bottom": "auto", 
+              "alignVertical": "top", 
+              "expanded_pmp": true, 
+              "pRight": "3%", 
+              "pAll": "", 
+              "pBottom": "", 
+              "borderStyle": "", 
+              "ontouchstart": "", 
+              "left": 1
+            }, 
+            {
+              "right": "auto", 
+              "onmousedown": "", 
+              "cached_js": "", 
+              "color": "", 
+              "text": "Pictured Shade: Warm Deep", 
+              "height": 32, 
+              "fontFamily": "Ebrima", 
+              "mRight": "", 
+              "id": "mineralsText2", 
+              "onresize": "", 
+              "children": [], 
+              "borderColor": "", 
+              "style": "", 
+              "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
+              "script": "", 
+              "top": 420, 
+              "!type": "Label", 
+              "pLeft": "", 
+              "pTop": "", 
+              "width": 324, 
+              "onmousemove": "", 
+              "onmouseup": "", 
+              "fontSize": "14", 
+              "hidden": "", 
+              "borderWidth": "", 
+              "onclick": "", 
+              "onmouseout": "", 
+              "_uuid": "9021d77d89ad4d3fa0c66481798b9dae", 
+              "mTop": "", 
+              "mBottom": "", 
+              "fontWeight": "500", 
+              "mAll": "", 
+              "mLeft": "", 
+              "class": "", 
+              "backgroundColor": "", 
+              "ontouchend": "", 
+              "fontStyle": "italic", 
+              "ontouchmove": "", 
+              "align": "center", 
+              "bottom": "auto", 
+              "alignVertical": "top", 
+              "expanded_pmp": true, 
+              "pRight": "", 
+              "pAll": "", 
+              "pBottom": "", 
+              "borderStyle": "", 
+              "ontouchstart": "", 
+              "left": 0
             }
           ], 
           "expanded_pmp": true, 
+          "_functions": [
+            {
+              "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
+              "cached_js": "", 
+              "script": "", 
+              "_uuid": "479b59276890491dbe9eb4b42cfeeb1f", 
+              "!type": "Project", 
+              "expanded_pmp": true, 
+              "id": "minerals.onclick", 
+              "location": [
+                1, 
+                2
+              ], 
+              "signature": "minerals.onclick()", 
+              "children": []
+            }
+          ], 
           "designHeight": 0, 
           "borderWidth": "", 
           "modal": "false", 
@@ -4618,7 +4849,7 @@
   "_old_pal": false, 
   "deploy_port": "21", 
   "deploy_password": "", 
-  "_tempdir": "c:\\users\\-\\appdata\\local\\temp\\tmpqxfsb9", 
+  "_tempdir": "/var/folders/wk/02fw_p094777y4997lc4pdvw0000gn/T/tmpKfc9J6", 
   "deploy_localPath": "", 
   "deploy_path": "", 
   "cache_dirty": true, 
