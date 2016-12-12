@@ -36,23 +36,23 @@ creamLabel.onclick=function(){
 }
 skinBack.onclick=function(){
   ChangeForm(homeForm);
+}
+
+foundationLabel.onclick=function(){
+  ChangeForm(FoundationForm);
 }
-
-foundationLabel.onclick=function(){
-  ChangeForm(FoundationForm);
+eyesBack.onclick=function(){
+  ChangeForm(homeForm);
 }
-eyesBack.onclick=function(){
-  ChangeForm(homeForm);
+cheeksBack.onclick=function(){
+  ChangeForm(homeForm);
 }
-cheeksBack.onclick=function(){
-  ChangeForm(homeForm);
-}
-envBack.onclick=function(){
-  ChangeForm(homeForm);
-}
-
-burtsLabel.onclick=function(){
-  ChangeForm(burtsForm);
+envBack.onclick=function(){
+  ChangeForm(homeForm);
+}
+
+burtsLabel.onclick=function(){
+  ChangeForm(burtsForm);
 }
 matteBack.onclick=function(){
   ChangeForm(lipsForm);
@@ -79,12 +79,8 @@ creamBack.onclick=function(){
   ChangeForm(lipsForm);
 }
 
-burtsLogo.onclick = function(){
-  ChangeForm(burtsForm);
-}
-
-sephoraLogo.onclick=function(){
-  ChangeForm(sephoraForm);
+burtsLogo.onclick = function(){
+  ChangeForm(burtsForm);
 }
 burtsBack.onclick=function(){
   ChangeForm(creamForm);
@@ -103,17 +99,4 @@ clinique.onclick = function() {
 }
 blackUpBack.onclick = function() {
     ChangeForm(FoundationForm);
-}
-sephoraBack.onclick = Function() {
-    ChangeForm(creamForm);
-}
-NYX.onclick=function(){
-  ChangeForm(NYXForm);
-}
-
-glossBack.onclick=function(){
-  ChangeForm(lipsForm);
-}
-NYXBack.onclick=function(){
-  ChangeForm(glossForm);
 }
