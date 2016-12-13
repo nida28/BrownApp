@@ -9782,7 +9782,23 @@
             }
           ], 
           "expanded_pmp": true, 
-          "_functions": [], 
+          "_functions": [
+            {
+              "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
+              "cached_js": "", 
+              "script": "", 
+              "_uuid": "7b79465f1ded4b49af32afecaed82efd", 
+              "!type": "Project", 
+              "expanded_pmp": true, 
+              "id": "marcMascBack.onclick", 
+              "location": [
+                1, 
+                2
+              ], 
+              "signature": "marcMascBack.onclick()", 
+              "children": []
+            }
+          ], 
           "designHeight": 0, 
           "borderWidth": "", 
           "modal": "false", 
@@ -9799,7 +9815,7 @@
           "borderColor": "", 
           "style": "", 
           "cached_js_script_hash": "d41d8cd98f00b204e9800998ecf8427e", 
-          "script": "", 
+          "script": "\nclinMascBack.onclick=function(){\n  ChangeForm(mascaraForm);\n}", 
           "top": 0, 
           "!type": "Form", 
           "onhide": "", 
@@ -10067,6 +10083,7 @@
             }
           ], 
           "expanded_pmp": true, 
+          "_functions": [], 
           "designHeight": 0, 
           "borderWidth": "", 
           "modal": "false", 
