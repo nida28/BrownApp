@@ -116,10 +116,6 @@ PlayButton.onclick = function() {
   concealVideo.play();
 }
 
-PlayButton.onclick = function() {
-  bbCCVideo.play();
-}
-
 concealBack.onclick=function(){
   ChangeForm(skinForm);
 }
@@ -137,8 +133,8 @@ mufeBack.onclick=function(){
 abhBack.onclick=function(){
   ChangeForm(FoundationForm);
 }
-bbCCVideo.onresize=function(){
-  
+PlayButton.onclick = function() {
+  bbCCVideo.play();
 }
 
 bbCCBack.onclick=function(){
@@ -170,20 +166,68 @@ mascaraLabel.onclick=function(){
 shadowLabel.onclick=function(){
   ChangeForm(shadowForm);
 }
+PlayButton.onclick = function() {
+  eyelinerVideo.play();
+}
+
 eyelinerBack.onclick=function(){
   ChangeForm(eyesForm);
 }
 
-eyelinerLabel.onclick=function(){
+bobbiLogo.onclick=function(){
+  ChangeForm(bobbiForm);
+}
+
+eyeko.onclick=function(){
+  ChangeForm(eyekoForm);
+}
+bobbiBack.onclick=function(){
   ChangeForm(eyelinerForm);
 }
-
-mascaraLabel.onclick=function(){
-  ChangeForm(mascaraForm);
+eyekoBack.onclick=function(){
+  ChangeForm(eyelinerForm);
+}
+PlayButton.onclick = function() {
+  shadowVideo.play();
 }
 
-shadowLabel.onclick=function(){
+shadowBack.onclick=function(){
+  ChangeForm(eyesForm);
+}
+
+w3llLogo.onclick=function(){
+  ChangeForm(w3llForm);
+}
+
+locLogo.onclick=function(){
+  ChangeForm(locForm);
+}
+w3llBack.onclick=function(){
   ChangeForm(shadowForm);
+}
+locBack.onclick=function(){
+  ChangeForm(shadowForm);
+}
+PlayButton.onclick = function() {
+  mascaraVideo.play();
+}
+
+mascaraBack.onclick=function(){
+  ChangeForm(eyesForm);
+}
+
+marcelleLogo.onclick=function(){
+  ChangeForm(marcMascForm);
+}
+
+cliniqueLogo.onclick=function(){
+  ChangeForm(clinMascForm);
+}
+marcMascBack.onclick=function(){
+  ChangeForm(mascaraForm);
+}
+clinMascBack.onclick=function(){
+  ChangeForm(mascaraForm);
 }
 cheeksBack.onclick=function(){
   ChangeForm(homeForm);
